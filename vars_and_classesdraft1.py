@@ -6,7 +6,7 @@ Created on Dec 23, 2016
 In this module I will create all the gobal Varibles and classes needed for this program.
 '''
 
-# This is my addition for git
+# This is my substraction for git
 
 #===============================================================================
 #  Key: prefix char = what will eventually be pushed to the user
