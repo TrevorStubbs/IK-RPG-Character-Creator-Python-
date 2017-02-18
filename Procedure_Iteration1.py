@@ -4,6 +4,7 @@ Created on Feb 14, 2017
 @author: 6700K_RGB_Build
 '''
 # This is a procedural prototype to the application
+# TODO = things that need to be worked on
 
 #These next variables define empty variables which will be used once a race is chosen.
 #===============================================================================
@@ -19,15 +20,16 @@ Created on Feb 14, 2017
 #===============================================================================
 
 # These next few variables fill in the top part of the character sheet
-#char_name = str(input("What is your character's name? "))
+char_name = str(input("What is your character's name? "))
 char_sex = str(input("What is your character's sex? "))
-#char_def = str(input("What is your character's defining characteristics? "))
+# char_def = str(input("What is your character's defining characteristics? "))
 # char_weight = str(input("How much does your character weight? "))
 # char_height = str(input("How tall is your character? ))
-#char_faith = str(input("What faith does your character follow? "))
+# char_faith = str(input("What faith does your character follow? "))
 
+print("Choose your character's race.")
 char_race = int(input("1. Human \r2. Dwarf\r3. Gobber\r4. Iosan\r5. Nyss\r6. Ogrun\r7. Trollkin\rWhat is your character's race? "))
-
+#1 = human, 2 = dwarf, 3 = gobber, 4 = iosan, 5= nyss, 6 = ogrun, 7 = trollkin
 if char_race == 1: # if Human is selected set all the base stats.
     char_phy = 5
     char_spd = 6
@@ -103,11 +105,11 @@ else:
     
 # Choosing character's languages    
 if char_race == 1 or char_race == 2 or char_race == 3 or char_race == 4 or char_race == 5 or char_race == 7:
-    print("You get 2 languages.")
+    print("Your character knows 2 languages.")
     lang_one = str(input("What is you're character's first language? "))
     lang_two = str(input("What is you're character's second language? "))
 else:
-    print("You get 3 languages. ")
+    print("Your character knows 3 languages. ")
     lang_one = str(input("What is you're character's first language? "))
     lang_two = str(input("What is you're character's second language? "))
     lang_three = str(input("What is you're character's third language? "))
@@ -270,4 +272,75 @@ if char_race == 7:
         print("Trollkin weigh between 150-330 pounds.")
         char_height = str(input("How much does your character weigh? "))  
 
-print("Characer's height is {} inches".format(char_height))
+# Selecting Archtype
+# 1 = Gifted, 2 = Intellectual, 3 = Mighty, 4 = Skilled
+print("Chose your character's archtype.")
+if char_race == 1 or char_race == 2 or char_race == 4:
+    char_arch = int(input("1. Gifted \r2. Intellectual \r3. Mighty \r4. Skilled\rWhat is your character's archtype? "))
+elif char_race == 5 or char_race == 7:
+    char_arch = int(input("1. Gifted \r2. Mighty \r 3. Skilled\rWhat is your character's archtype? "))
+    if char_arch == 2:
+        char_arch = 3
+    elif char_arch == 3:
+        char_arch = 4
+elif char_race == 3:
+    char_arch = int(input("1. Intellectual \r2. Mighty \r3. Skilled\rWhat is your character's archtype? "))
+    if char_arch == 1:
+        char_arch = 2
+    elif char_arch == 2:
+        char_arch = 3
+    elif char_arch == 3:
+        char_arch = 4
+elif char_race == 6:
+    char_arch = int(input("1. Mighty \r2. Skilled\rWhat is your character's archtype? "))
+
+#chose archtype benifits
+if char_arch == 1:
+    # Gifted
+    # Chose arcane school and set base arcane value
+    print("A gifted character needs tho choose how they controls magic.")
+    arcane_school = int(input("1. Focuser \r2. Will Weaver\rHow does your character control magic? "))
+    if arcane_school == 1:
+        char_arc = 2
+    else: 
+        char_arc = 3
+    print("Additionally a Gifted character gains one of the following benefits. Pg. 115")
+    # may need to rename arch_benefit to something specific to each archtype
+    arch_benefit = int(input("1. Addional Study \r2. Combat Caster \r3. Fast Caster \r4. Feat: Dominator \r" 
+                             "5. Feat: Powerful Caster \r6. Feat: Quick Caster \r7. Feat: Strength of will \r"
+                             "8. Magic Sensitivity \r9. Rune Reader \r10. Warding Circle \r"
+                             "What benifit do you want to assign to your character?"))
+elif char_arch == 2:
+    # Intellectual
+    #TODO must figure how how to incorperate this benifit into the character sheet
+    print("You gain +1 to your attack and damage rolls. Additionally while in your command range friendly characters"
+          "gain +1 to their attack and damage rolls")
+    print("Additionally a Intellectual character gains one of the following benefits. Pg. 115")
+    # rename?
+    arch_benefit = int(input("1. Battlefield Coordinator \r2. Feat Flawless Timing \r3. Feat: Prescient \r"
+                             "4. Feat: Perfect Plot \r5. Feat: Plan of Action \r6. Feat: Quick Thinking \r"
+                             "7. Feat: Unconventional Warfare \r8. Genius \r9. Hyper Perception \r"
+                             "10. Photographic Memory \rWhat benefit do you want to assign to your character?"))
+elif char_arch == 3:
+    # Mighty
+    #TODO incorperate benifit
+    print("Mighty characters gain an additional die on their damage rolls.")
+    print("Additionally a Mighty character gains one of the following benefits. Pg. 116")
+    # rename?
+    arch_benefit = int(input("1. Beat Back \r2. Feat: Back Swing \r3. Feat: Bounding Leap \r"
+                             "4. Feat: Countr Charge \r5. Feat: Invulnerable \r6. Feat: Revitalize \r"
+                             "7. Feat: Shield Breaker \r8. Feat: Vendetta \r9. Righteous Anger \r"
+                             "10. Tough \rWhat benefit do you want to assign to your charater?"))   
+else:
+    # Skilled
+    #TODO incorperate benefits
+    print("A Skilled character gains an additional attack during a turn they attack.")
+    print("Additionally a Skilled character gains one of the following benefits. Pg. 116")
+    arch_benefit = int(input("1. Ambidextrous \r2. Cagey \r3. Deft \r4. Feat: Defensive Strike \r"
+                             "5. Feat: Disarm \r6. Feat: Swashbuckler \r7. Feat: Untouchable \r"
+                             "8. Preternatural Awareness \r9. Sidestep \r10. Virtuoso"))
+    
+    
+    
+    
+    
