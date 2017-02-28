@@ -380,7 +380,7 @@ if char_race == 1:
                                  "18. Spy \n19. Stormblade \n20. Thief \n21. Trencher \n"
                                  "What is your character's first career?"))
         char_career2 = int(input("What is your character's second career?"))
-#dwarf and Nyss
+#dwarf and Nyss TODO rewrite nyss' careers to not include some gifted careers.
 elif char_race == 2 or char_race == 5:
     #gifted
     if char_arch == 1:
@@ -468,7 +468,7 @@ elif char_race == 6:
                              "What is your character's first career?"))
     char_career2 = int(input("What is your character's second career?"))
     
-#Trollkin
+#Trollkin TODO trollkin cant have arcane mechanik, arcanist or warcaster careers.
 else:
     #Gifted 
     if char_arch == 1:
@@ -501,7 +501,9 @@ else:
                                  "What is your character's first career?"))
         char_career2 = int(input("What is your character's second career?"))
             
-            
+#increase you stats
+if char_race == 1:
+                
     
     
     
