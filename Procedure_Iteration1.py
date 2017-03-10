@@ -372,6 +372,8 @@ else:
                              "5. Feat: Disarm \n6. Feat: Swashbuckler \n7. Feat: Untouchable \n"
                              "8. Preternatural Awareness \n9. Sidestep \n10. Virtuoso"
                              "What benefit do you want to assign to your charater? "))
+    
+    
 # Character careers.
 print("Your Character starts with 2 careers.")
 #human
@@ -408,8 +410,10 @@ if char_race == 1:
                                  "18. Spy \n19. Stormblade \n20. Thief \n21. Trencher \n"
                                  "What is your character's first career? "))
         char_career2 = int(input("What is your character's second career? "))
-#dwarf and Nyss TODO rewrite nyss' careers to not include some gifted careers.
-elif char_race == 2 or char_race == 5:
+        
+        
+#dwarf
+elif char_race == 2:
     #gifted
     if char_arch == 1:
         #focuser
@@ -441,6 +445,8 @@ elif char_race == 2 or char_race == 5:
                                  "15. Spy \n16. Thief \n"
                                  "What is your character's first career? "))
         char_career2 = int(input("What is your character's second career? "))
+        
+        
 #gobber
 elif char_race == 3:
     char_career1 = int(input("1. Alchemist \n"
@@ -451,6 +457,8 @@ elif char_race == 3:
                              "15. Spy \n16. Thief \n"
                              "What is your character's first career? "))
     char_career2 = int(input("What is your character's second career? "))
+    
+    
 #Iosan
 elif char_race == 4:
     #Gifted
@@ -485,6 +493,30 @@ elif char_race == 4:
                                  "17. Spy \n18. Thief \n"
                                  "What is your character's first career? "))
         char_career2 = int(input("What is your character's second career? "))
+#Nyss TODO fix usable carriers
+elif char_race == 5:
+    #gifted
+    if char_arch == 1:
+        char_career1 = int(input("1. Alchemist\n"
+                                 "2. Bounty Hunter \n3. Cuttthroat \n4. Duelist \n5. Field Mechanik \n"
+                                 "6. Highwayman \n7. Investigator \n"
+                                 "8. Man-at-Arms \n9. Military Officer \n10. Pirate \n"
+                                 "11. Pistoleer \n12. Ranger \n13. Rifleman \n14. Soldier \n"
+                                 "15. Sorcerer \n16. Spy \n17. Thief \n"
+                                 "What is your character's first career? "))
+        char_career2 = int(input("What is your character's second career? "))
+    #all other arch
+    else:
+        char_career1 = int(input("1. Alchemist \n"
+                                 "2. Bounty Hunter \n3. Cuttthroat \n4. Duelist \n5. Field Mechanik \n"
+                                 "6. Highwayman \n7. Investigator \n"
+                                 "8. Man-at-Arms \n9. Military Officer \n10. Pirate \n"
+                                 "11. Pistoleer \n12. Ranger \n13. Rifleman \n14. Soldier \n"
+                                 "15. Spy \n16. Thief \n"
+                                 "What is your character's first career? "))
+        char_career2 = int(input("What is your character's second career? "))
+            
+            
 #Ogrun
 elif char_race == 6:
     char_career1 = int(input("1. Alchemist \n"
@@ -496,29 +528,20 @@ elif char_race == 6:
                              "What is your character's first career? "))
     char_career2 = int(input("What is your character's second career? "))
     
+      
 #Trollkin TODO trollkin cant have arcane mechanik, arcanist or warcaster careers.
 else:
     #Gifted 
     if char_arch == 1:
         #focuser
-        if arcane_school == 1:
-            char_career1 = int(input("1. Alchemist \n2. Arcane Mechanik \n3. Arcanist \n"
-                                     "4. Bounty Hunter \n5. Cuttthroat \n6. Duelist \n7. Field Mechanik \n"
-                                     "8. Gun Mage \n9. Highwayman \n10. Investigator \n"
-                                     "11. Man-at-Arms \n12. Military Officer \n13. Pirate \n"
-                                     "14. Pistoleer \n15. Ranger \n16. Rifleman \n17. Soldier \n"
-                                     "18. Sorcerer \n19. Spy \n20. Thief \n21. Trencher"
-                                     "22. Warcaster \nWhat is your character's first career? "))
-            char_career2 = int(input("What is your character's second career? "))
-        else:
-            char_career1 = int(input("1. Alchemist \n2. Arcane Mechanik \n3. Arcanist \n"
-                                     "4. Bounty Hunter \n5. Cuttthroat \n6. Duelist \n7. Field Mechanik \n"
-                                     "8. Gun Mage \n9. Highwayman \n10. Investigator \n"
-                                     "11. Man-at-Arms \n12. Military Officer \n13. Pirate \n"
-                                     "14. Pistoleer \n15. Ranger \n16. Rifleman \n17. Soldier \n"
-                                     "18. Sorcerer \n19. Spy \n20. Thief \n21. Trencher"
-                                     "What is your character's first career? "))
-            char_career2 = int(input("What is your character's second career? "))
+        char_career1 = int(input("1. Alchemist \n"
+                                 "2. Bounty Hunter \n3. Cuttthroat \n4. Duelist \n5. Field Mechanik \n"
+                                 "6. Gun Mage \n7. Highwayman \n8. Investigator \n"
+                                 "9. Man-at-Arms \n10. Military Officer \n11. Pirate \n"
+                                 "12. Pistoleer \n13. Ranger \n14. Rifleman \n15. Soldier \n"
+                                 "16. Sorcerer \n17. Spy \n18. Thief \n19. Trencher"
+                                 "What is your character's first career? "))
+        char_career2 = int(input("What is your character's second career? "))
     else:
         char_career1 = int(input("1. Alchemist \n"
                                  "2. Bounty Hunter \n3. Cuttthroat \n4. Duelist \n5. Field Mechanik \n"
@@ -529,8 +552,5 @@ else:
                                  "What is your character's first career? "))
         char_career2 = int(input("What is your character's second career? "))
             
-#===============================================================================
-# #increase you stats
-# if char_race == 1:
-#===============================================================================
+
                 
