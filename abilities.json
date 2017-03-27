@@ -1,7 +1,909 @@
-[
-    {
-        "Description": "The character is skilled at instructing steamjacks to act. The \u2019jack marshal must know the cortex's native language to instruct it as well as the \u2019jack\u2019s cortex lock codes. Bonded steamjacks (p. 323) cannot be affected by this ability. For a complete description of how this ability is used, see \u201c\u2019Jack Marshals\u201d (p. 322).",
-        "Ability": "'Jack Marshal",
-        "Prerequisite": "None"
+{
+  "jack_marshal": {
+    "description": "The character is skilled at instructing steamjacks to act. The u\"\\u0027\"jack marshal must know the cortexu\"\\u0027\"s native language to instruct it as well as the u\"\\u0027\"jacku\"\\u0027\"s cortex lock codes.",
+    "prerequisite": {
+      "none": true
     }
-]
+  },
+  "ace_commander": {
+    "description": "The character gains an extra quick action during each of his turns that can only be used to drive a u\"\\u0027\"jack.",
+    "prerequisite": {
+      "command": 2,
+      "jack_marshal": true
+    }
+  },
+  "acrobatics": {
+    "description": "The character can advance through other characters if he has enough movement to move completely past their bases. The character also gains +3 on his Jumping skill rolls.",
+    "prerequisite": {
+      "agl": 6
+    }
+  },
+  "advisor": {
+    "description": "While B2B (base-to-base, see p. 204) with this character, friendly characters gain +1 to their command range.",
+    "prerequisite": {
+      "command": 2
+    }
+  },
+  "ambush": {
+    "description": "During the first round of an encounter, this character gains boosted attack and damage rolls against enemies that have not yet activated that encounter.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "anatomical_precision": {
+    "description": "When this character hits a living target with a melee attack but the damage roll fails to exceed the targetu\"\\u0027\"s ARM, the target suffers d3 damage points instead of the damage rolled.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "appraise": {
+    "description": "The character has a sharp eye and keen mind for detail, especially where monetary values are concerned. The character can judge the value of most fine goods with an inspection. Truly good fakes might require a Detection + INT roll to spot.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "arcane_assassin": {
+    "description": "When making attacks, this character ignores focus points overboosting the targetu\"\\u0027\"s Power Field and spell effects adding to its ARM or DEF.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "arcane_defenses": {
+    "description": "This character gains +3 ARM against magic attacks.",
+    "prerequisite": {
+      "arc": 5
+    }
+  },
+  "arcane_engineer": {
+    "description": "The character can reroll failed Mechanikal Engineering rolls. Each failed roll can be rerolled only once as a result of Arcane Engineer.",
+    "prerequisite": {
+      "mechanikal_engineer": 2
+    }
+  },
+  "arcane_precision": {
+    "description": "When this character forfeits his movement to aim with a ranged weapon, he ignores stealth that turn.",
+    "prerequisite": {
+      "detection": 3
+    }
+  },
+  "arcane_scholar": {
+    "description": "This character can have a number of spells equal to his INT x3, instead of the normal limit of INT x2.",
+    "prerequisite": {
+      "none": null
+    }
+  },
+  "astute": {
+    "description": "The character can reroll failed Detection rolls. Each failed roll can be rerolled only once as a result of Astute.",
+    "prerequisite": {
+      "detection": 1
+    }
+  },
+  "backstab": {
+    "description": "This character gains an additional die on his back strike damage rolls.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "battle_commander": {
+    "description": "This character can use one battle plan during each of his turns without spending a feat point.",
+    "prerequisite": {
+      "command": 3
+    }
+  },
+  "battle_plan": {
+    "call_to_action": {
+      "description": "The character can spend 1 feat point to use Battle Plan: Call to Action. Using a battle plan is a quick action. When a character uses this battle plan, each friendly character in his command range who is under his command and is knocked down immediately stands up or goes prone.",
+      "prerequisite": {
+        "command": 1
+      }
+    },
+    "coordinated_strike": {
+      "description": "The character can spend 1 feat point to use Battle Plan: Coordinated Strike during a surprise round (p. 201) before a battle. Using a battle plan is a quick action. When a character uses this battle plan, each friendly character in his command range can immediately make one attack. After these attacks, the surprise round ends and the characters are detected.",
+      "prerequisite": {
+        "command": 1
+      }
+    },
+    "desperate_pace": {
+      "description": "The character can spend 1 feat point to use Battle Plan: Desperate Pace. Using a battle plan is a quick action. When a character uses this battle plan, each friendly character who follows the characteru\"\\u0027\"s orders gains +2˝ movement for one round.",
+      "prerequisite": {
+        "command": 3
+      }
+    },
+    "go_to_ground": {
+      "description": "The character can spend 1 feat point to use Battle Plan: Go to Ground. Using a battle plan is a quick action. When a character uses this battle plan, each friendly character who follows the characteru\"\\u0027\"s orders gains cover, does not suffer blast damage, and does not block LOS until he moves, is placed, or is engaged.",
+      "prerequisite": {
+        "command": 2
+      }
+    },
+    "reconnaissance": {
+      "description": "The character can spend 1 feat point to use Battle Plan: Reconnaissance. Using a battle plan is a quick action. When a character uses this battle plan, the character and each friendly character who starts his activation in his command range gains the Pathfinder ability. Battle Plan: Reconnaissance lasts for one round.",
+      "prerequisite": {
+        "command": 2,
+        "survival": "3"
+      }
+    },
+    "shadow": {
+      "description": "The character can spend 1 feat point to use Battle Plan: Shadow. Using a battle plan is a quick action. When a character uses this battle plan, each friendly character who follows the characteru\"\\u0027\"s orders gains Prowl (p. 165) for one round.",
+      "command": 1
+    }
+  },
+  "bayonet_charge": {
+    "description": "When this character charges with a ranged weapon that has a bayonet, after moving but before making his charge attack, he can make one ranged attack targeting his charge target unless he was in melee with his charge target at the start of his turn. When resolving a Bayonet Charge ranged attack, the character does not suffer the target in melee attack roll penalty (see p. 212). If the target is not in melee range after the charging character moves, the character can make the Bayonet Charge ranged attack before his turn ends. A character making a Bayonet Charge must make his charge attack with a bayonet.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "big_game_hunter": {
+    "description": "A character with the Big Game Hunter ability has hunted more than his fair share of game in the wilds of Immoren. When a character with Big Game Hunter makes a melee or ranged attack against a natural animal or beast native to the wilds of Immoren, he gains a bonus on attack rolls equal to his Survival skill.",
+    "prerequisite": {
+      "survival": 1
+    }
+  },
+  "binding": {
+    "description": "When the character ties up, manacles, or otherwise restrains another character with some form of restraints, add +3 to the skill roll difficulty for the bound character to escape.",
+    "prerequisite": {
+      "rope_use": "1"
+    }
+  },
+  "blaster": {
+    "description": "The character gains +2 to hit with electrical ranged attacks.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "blood_spiller": {
+    "description": "The character gains +2 on damage rolls against living characters.",
+    "prerequisite": {
+      "hand_weapons": 3
+    }
+  },
+  "bodge": {
+    "description": "The character can make temporary repairs to a steamjack in the midst of combat. See the u\"\\u0027\"Steamjacksu\"\\u0027\" chapter (p. 299) for more details.",
+    "prerequisite": {
+      "mechanikal_engineering": 1
+    }
+  },
+  "bodyguard": {
+    "description": "This character is not limited in the number of times he can use Shield Guard each round.",
+    "prerequisite": {
+      "shield_guard": true,
+      "shield": 3
+    }
+  },
+  "bomber": {
+    "description": "When this characteru\"\\u0027\"s grenade ranged attack deviates, you can reroll the direction and/or distance of deviation. A roll can only be rerolled once as a result of Bomber.",
+    "prerequisite": {
+      "thrown_weapon": 3
+    }
+  },
+  "bond": {
+    "description": "This ability can be taken more than once. Each time a character takes this ability he gains a bonding slot that can be used to bond with warcaster armor, a steamjack, or a mechanika weapon – one per slot. To form a bond, a character must spend a full action touching the steamjack or object he intends to bond to. Forming a bond with a steamjack requires the warcaster to know its cortexu\"\\u0027\"s native language and the pass codes to any locks on its cortex. A character can break a bond at will in order to free up a slot to form another bond. (pg. 158)",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "brew_master": {
+    "description": "The character can reroll failed Alchemy rolls. Each failed roll can be rerolled only once as a result of Brew Master.",
+    "prerequisite": {
+      "alchemy": 2
+    }
+  },
+  "camouflage": {
+    "description": "The character gains an additional +2 DEF when benefiting from concealment or cover.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "card_sharp": {
+    "description": "The character is skilled at manipulating his fortune at cards by the judicious application of legerdemain. He’s a cheat. When the character uses this ability, he adds an extra die to his Gambling skill rolls and drops the lowest die result.",
+    "prerequisite": {
+      "gambling": 2
+    }
+  },
+  "cautious_advance": {
+    "description": "The character gains one extra quick action each turn that can be used only to take cover.",
+    "prerequisite": {
+      "survival": 3
+    }
+  },
+  "cavalry_charge": {
+    "description": "This character can make a cavalry charge (p. 214) while riding a mount designated as a warhorse.",
+    "prerequisite": {
+      "riding": 1
+    }
+  },
+  "chain_attack": {},
+  "bleed_out": {
+    "description": "If this character fights with two melee hand weapons and hits the same living target with both his initial attacks, after resolving the attacks he can immediately make one additional melee attack against his target. If the additional attack hits, it does not inflict damage but the target must forfeit either its movement or action on its next Activation Phase.",
+    "prerequisite": {
+      "two_weapon_fighting": true
+    }
+  },
+  "pin_down": {
+    "description": "If this character hits the same living target with initial attacks from two pistols, after resolving the attacks he can immediately make one additional ranged attack against that target ignoring ROF. If the additional attack hits, it does not inflict damage. Instead, the target hit can advance up to 2u\\\"\\\\u0022\\\", and it is then knocked down.",
+    "prerequisite": {
+      "two_weapon_fighting": true,
+      "pistol": 3
+    }
+  },
+  "choir": {
+    "description": "A character gains a cumulative +1 on magic attack rolls for each other friendly character of his faith with this ability within 1u\\\"\\\\u0022\\\" of him.",
+    "prerequisite": {
+      "arc": 4
+    }
+  },
+  "cleave": {
+    "description": "When this character incapacitates one or more enemies with a melee attack made with a great weapon during his turn, the character can make one additional melee attack immediately after the attack is resolved. A character can gain only one additional attack from Cleave each turn.",
+    "prerequisite": {
+      "great_weapon": 1
+    }
+  },
+  "close_shot": {
+    "description": "The character does not suffer the –4 penalty on ranged attack rolls with a storm glaive while engaged.",
+    "prerequisite": {
+      "none": true
+    },
+    "": {}
+  },
+  "combat_rider": {
+    "description": "While this character is riding a mount designated as a warhorse, the mount can make one impact attack against a target in its melee range if the mount and rider did not charge this turn.",
+    "prerequisite": {
+      "riding": 1
+    }
+  },
+  "conniver": {
+    "description": "The character is well skilled in the arts of deception. The character can reroll failed Bribery and Deception-based social skill rolls. Each roll can be rerolled only once as a result of Conniver.",
+    "prerequisite": {
+      "bribery": 1,
+      "deception": "1"
+    }
+  },
+  "cover_identity": {
+    "description": "The character has an established cover identity with its own history, contacts, and criminal record (or lack thereof). The characteru\\\"\\\\u0027\\\"s Disguise rolls while using his cover identity are automatically boosted. Choose a career for the cover identity. The character gains one occupational skill at level 1 from the cover identityu\\\"\\\\u0027\\\"s career. The cover identity must be reasonably believable. A gobber disguised as a trollkin fell caller won’t fool anybody. This ability can be taken multiple times. Each time, it applies to a different cover identity.",
+    "prerequisite": {
+      "disguise": 1
+    }
+  },
+  "crackshot": {
+    "description": "The character can accurately track his target despite its attempts to take cover. When making a ranged or magic attack against a target that has concealment, cover, or elevation, this character gains +2 on the attack roll.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "craft_rune_shot": {
+    "description": "The character can craft his own rune shot ammunition. Instead of paying 5 gc for each metal cartridge round of rune shot ammunition, a character with this ability and a rune shot casting kit can cast his own rounds, paying 1 gc for the powder, material to cast a rune bullet, and metal casing to press one round of rune shot ammunition. The character must inscribe the casing and bullet by hand. A character can craft up to five rune shot cartridges in an hour.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "crossbow_man": {
+    "description": "The character can reload a crossbow as a quick action instead of a full action.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "defender": {
+    "description": "Once per round, when a friendly character within this character’s command range is hit with an enemy attack, immediately after the attack has been resolved this character can advance toward the enemy character, up to twelve feet (2\\tu\\\"\\\\u0022\\\"), and make one melee attack.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "defensive_line": {
+    "description": "While this character is B2B with one or more friendly characters, he gains +1 ARM. While the character is B2B with one or more friendly characters who also have this ability, the bonus increases to +2.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "dig_in": {
+    "description": "While he has a spade in hand, this character can make a quick action to dig an improvised foxhole. Until he moves, is placed, goes prone, or is engaged, the character gains cover, does not suffer blast damage, and does not block line of sight. A character cannot use the Dig In ability during a turn in which he ran.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "disease_resistance": {
+    "description": "The character can make boosted rolls to resist disease and infection.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "dispel": {
+    "description": "When this character hits an enemy with a melee attack, he can spend 1 feat point to cause any upkeep spells on that enemy to immediately expire.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "dodger": {
+    "description": "When this character is missed by an enemy attack, he can immediately advance up to 2u\\\"\\\\u0022\\\" after the attack is resolved unless was missed while advancing. He cannot be targeted by free strikes during this movement.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "drive": {
+    "ancillary_attack": {
+      "description": "This character can make a quick action to use Drive: Ancillary Attack on a steamjack he controls. The steamjack immediately makes one normal melee or ranged attack.",
+      "prerequisite": {
+        "jack_marshal": true
+      }
+    },
+    "assault": {
+      "description": "This character can make a quick action to use Drive: Assault on a steamjack he controls. The steamjack charges during its turn this round without spending focus or being forced. As part of that charge, after moving but before making its charge attack, the steamjack can make one ranged attack targeting its charge target unless it was in melee with its charge target at the start of its turn. When resolving a Drive: Assault ranged attack, the steamjack does not suffer the penalty for a target in melee. If the target is not in melee range after the steamjack moves, the steamjack can make the Drive: Assault ranged attack before its turn ends.",
+      "prerequisite": {
+        "jack_marshal": true
+      }
+    },
+    "off_road": {
+      "description": "This character can make a quick action to use Drive: Off Road on a steamjack he controls. The steamjack gains the Pathfinder ability during its turn this round and must use its normal movement and combat action to charge or make a slam power attack during its turn this round.",
+      "prerequisite": {
+        "jack_marshal": true
+      }
+    },
+    "pronto": {
+      "description": "This character can make a quick action to use Drive: Pronto on a steamjack he controls. The steamjack immediately makes a full advance.",
+      "prerequisite": {
+        "jack_marshal": true
+      }
+    }
+  },
+  "dual_shot": {
+    "description": "The character can forfeit his movement during his turn to make one additional ranged attack with a pistol or rifle.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "elemental_mastery": {
+    "description": "The sorcerer gains +1 on his attack and damage rolls when casting an offensive spell from his elemental spell list.",
+    "prerequisite": {
+      "arc": 5
+    }
+  },
+  "empower": {
+    "description": "During this character\\tu\\\"\\\\u0027\\\"s turn, while he is B2B with a nonincapacitated friendly character, this character can spend 1 feat point to cause the friendly character to regain d3+1 vitality points.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "expert_rider": {
+    "description": "The character can reroll failed Riding rolls. Each roll can be rerolled only once as a result of Expert Rider. Additionally, provided the mount has not been knocked out, this character and his mount cannot be knocked down while this character is mounted.",
+    "prerequisite": {
+      "riding": 2
+    }
+  },
+  "fast_cook": {
+    "description": "The character has learned a number of time-saving shortcuts in the art of brewing potions and mixing alchemical substances. He can create alchemical items in half the normal time.",
+    "prerequisite": {
+      "alchemy": 2
+    }
+  },
+  "fast_draw": {
+    "description": "A character with this skill gains +2 on initiative rolls. He also gains an additional quick action during his first turn of combat each encounter that can be used only to draw a weapon.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "fast_rearm": {
+    "description": "The character gains one extra quick action each turn that can be used only to rearm a weapon of the type noted, such as a blasting pike. A character can have this ability several times, each time with a different specified weapon.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "fast_reload": {
+    "description": "The character gains one extra quick action each turn that can be used only to reload a ranged weapon.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "fell_call": {
+    "cacophony": {
+      "description": "The character can use this call as a quick action. For one round, enemies cannot cast spells, use battle plans, or use drives while in this characteru\"\\u0027\"s command range.",
+      "prerequisite": {
+        "fell_calling": 2
+      }
+    },
+    "call_of_defiance": {
+      "description": "The character can use this call as a quick action. For one round, when a friendly trollkin character makes a Tough roll while in this character’s command range, on a roll of 4, 5, or 6 the trollkin heals 1 vitality point and is knocked down.",
+      "prerequisite": {
+        "fell_calling": 2
+      }
+    },
+    "ground_shaker": {
+      "description": "Once per turn, the character can use this call instead of attacking. The character then makes a RNG 10, AOE 5 fell call ranged attack that causes no damage. Targets hit are knocked down.",
+      "prerequisite": {
+        "fell_calling": 3
+      }
+    },
+    "heroic_ballad": {
+      "description": "The character can use this call as a quick action. For the rest of the round, while in the Fell Calleru\"\\u0027\"s command range, friendly trollkin characters are fearless and gain +2 to melee attack rolls. Heroic Ballad lasts for one round.",
+      "prerequisite": {
+        "fell_calling": 2
+      }
+    },
+    "reverberation": {
+      "description": "The character can use this call as a quick action. The character makes a RNG SP 6 ranged attack that causes no damage. The character uses his POI + Fell Calling skill for his attack rolls. Enemies hit are pushed d3u\"\\u0022\" directly away from this character. Move the enemy who was farthest away first.",
+      "prerequisite": {
+        "fell_calling": 2
+      }
+    },
+    "signal_call": {
+      "description": "The character can use this call as a quick action. The character can unleash a call that can be heard for a number of miles equal to his Fell Caller skill.",
+      "prerequisite": {
+        "fell_calling": 1
+      }
+    },
+    "sonic_blast": {
+      "description": "Once per turn, the character can use this call instead of attacking. The character then makes a RNG SP 8, POW 12 ranged attack. The character uses his POI + Fell Calling skill for his attack rolls.",
+      "prerequisite": {
+        "fell_calling": 2
+      }
+    }
+  },
+  "field_alchemist": {
+    "description": "The character gains an additional quick action each turn that can be used only to create a field alchemy quick effect.",
+    "prerequisite": {
+      "alchemy": 1
+    }
+  },
+  "field_marshal": {
+    "magic_attack": {
+      "description": "The warcaster can spend a focus point during his turn to use Field Marshal: Magical Attack. For one round, the weapons of characters in his battlegroup become magical weapons while in the warcasteru\"\\u0027\"s control area.",
+      "prerequisite": {
+        "arc": 5
+      }
+    },
+    "relentless_charge": {
+      "description": "The warcaster can spend a focus point during his turn to use Field Marshal: Relentless Charge. For one round, when a character in the warcasteru\"\\u0027\"s battlegroup begins a charge while in his control area, that character gains the Relentless Charge ability for his turn. (A character who already has Relentless Charge ignores penalties for rough terrain during an Activation Phase in which he charges.)",
+      "prerequisite": {
+        "arc": 5
+      }
+    },
+    "shield_guard": {
+      "description": "The warcaster can spend a focus point during his turn to use Field Marshal: Shield Guard. For one round, characters in his battlegroup gain the Shield Guard ability while in the Warcasteru\"\\u0027\"s control area. Once per turn, when a friendly character is directly hit by an attack while within 2u\"\\u0022\" of a character with Shield Guard, the character with Shield Guard can become the target of the attack and be automatically hit instead. A character cannot use Shield Guard if he is incorporeal, knocked down, or stationary.",
+      "prerequisite": {
+        "arc": 7
+      }
+    }
+  },
+  "find_cover": {
+    "description": "At the start of combat before initiative is rolled, this character can immediately advance up to twelve feet (2u\"\\u0022\") and perform a quick action to take cover or go prone.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "fire_in_the_hole": {
+    "description": "This character can make a grenade attack at the start of the Action Phase of his turn before moving or making his normal attacks. A character making a Fire in the Hole! attack must use his movement that turn to run or make a full advance.",
+    "prerequisite": {
+      "thrown_weapon": 1
+    }
+  },
+  "fleet_foot": {
+    "description": "When the character runs, he moves at SPD x 3.",
+    "prerequisite": {
+      "spd": 7
+    }
+  },
+  "free_style": {
+    "description": "The character can improvise the ingredients in his alchemical compounds. This allows the character to attempt to make do without a specific ingredient. This requires an Alchemy skill roll with a target number equal to 10 plus the gc value of the ingredient. This ability also allows the character to get by with less expensive versions of common alchemical ingredients, reducing the cost of his alchemical compounds by 1 gc each (to a minimum of 1 gc). Alchemical compounds brewed using this skill vary slightly in appearance or physical quality from items created by following time-tested recipes.",
+    "prerequisite": {
+      "alchemy": 1
+    }
+  },
+  "gang": {
+    "description": "When making a melee attack that targets an enemy in melee range of another friendly character, this character gains +1 to melee attack and melee damage rolls. When making a melee attack that targets an enemy in melee range of another friendly character who also has this ability, these bonuses increase to +2.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "get_away": {
+    "description": "When the character is missed by an enemy attack at any time other than while advancing, instead of advancing up to 2u\"\\u0022\", the character can immediately make a full advance.",
+    "prerequisite": {
+      "dodger": true,
+      "escape_artist": 3
+    }
+  },
+  "girded": {
+    "description": "While armed with a shield, this character does not suffer blast damage. Friendly characters B2B with this character do not suffer blast damage either.",
+    "prerequisite": {
+      "shield": 2
+    }
+  },
+  "good_breeding": {
+    "description": "The character was raised in high society. He can reroll failed Etiquette rolls. Each roll can be rerolled only once as a result of Good Breeding.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "great_power": {
+    "description": "This character can upkeep one spell each turn without spending a focus point or gaining a fatigue point.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "grenadier": {
+    "description": "The character gains an additional quick action each turn that can be used only to pull the pin on a grenade.",
+    "prerequisite": {
+      "thrown_weapon": 1
+    }
+  },
+  "gunfighter": {
+    "description": "The character does not suffer a –4 penalty on ranged attack rolls with pistols or carbines while engaged.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "head_butt": {
+    "description": "Instead of making a normal Unarmed Combat attack, this character can spend a feat point to make a head-butt attack. The character makes an unarmed melee attack roll against his target. If the attack hits, the target is knocked down and suffers a damage roll with a POW (Power) equal to the characteru\"\\u0027\"s current STR. A character cannot head-butt a target with a larger base.",
+    "prerequisite": {
+      "str": 5,
+      "unarmed_combat": 2
+    }
+  },
+  "hit_the_deck": {
+    "description": "The character is so accustomed to catastrophic explosions in his presence that he has developed the uncanny ability to hit the ground the second before he is affected by a blast. While prone, the character does not suffer damage from AOEs unless he is directly hit by the AOE. If the character is caught in an AOE that would cause blast damage but was not directly hit by the AOE, he goes prone but suffers no damage.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "hyper_awareness": {
+    "description": "While in this characteru\"\\u0027\"s command range, friendly characters gain Circular Vision. (The front arc of a character with Circular Vision extends to 360 degrees.)",
+    "prerequisite": {
+      "command": 3
+    }
+  },
+  "immunity": {
+    "cold": {
+      "description": "The character is immune to cold damage.",
+      "prerequisite": {
+        "none": true
+      }
+    },
+    "corrosion": {
+      "description": "The character is immune to corrosion damage.",
+      "prerequisite": {
+        "none": true
+      }
+    },
+    "electricity": {
+      "description": "The character is immune to electrical damage.",
+      "prerequisite": {
+        "none": true
+      }
+    },
+    "fire": {
+      "description": "The character is immune to fire damage.",
+      "prerequisite": {
+        "none": true
+      }
+    }
+  },
+  "inscribe_formulae": {
+    "description": "The character can inscribe runeplates. See Mechanika (p. 279).",
+    "prerequisite": {
+      "mechanikal_engineering": 1
+    }
+  },
+  "iron_sentinel": {
+    "description": "The character has learned to position himself behind the steamjacks he commands to stay out of harm’s way. While B2B with one or more steamjacks he commands, the character gains +2 ARM and cannot be knocked down.",
+    "prerequisite": {
+      "jack_marshal": true,
+      "command": 3
+    }
+  },
+  "iron_will": {
+    "description": "The character can reroll failed Willpower rolls. Each roll can be rerolled only once as a result of Iron Will.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "keen_eyed": {
+    "description": "The character can increase his effective range with a bow or rifle by twelve feet (2u\"\\u0022\") and his extreme range by sixty feet (10u\"\\u0022\").",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "language": {
+    "description": "This ability can be taken multiple times. Each time a character takes this ability, he learns how to speak, read, and write a new language.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "legacy_of_bragg": {
+    "description": "The character gains an additional quick action each turn that can be used only to make fell calls.",
+    "prerequisite": {
+      "fell_calling": 2
+    }
+  },
+  "light_cavalry": {
+    "description": "If this character is riding a mount not designated as a warhorse, at the end of his turn he can advance up to 5u\"\\u0022\".",
+    "prerequisite": {
+      "riding": 2
+    }
+  },
+  "load_bearing": {
+    "description": "The character is well practiced at fighting while wearing heavy armor. Reduce the SPD and DEF penalties from the armor the character wears each by 1.",
+    "prerequisite": {
+      "str": 5
+    }
+  },
+  "mage_killer": {
+    "description": "This character gains an additional die on damage rolls against characters that can cast spells.",
+    "prerequisite": {
+      "per": 6
+    }
+  },
+  "marksman": {
+    "description": "The character can use quick actions and aim in the same round, but still has to forfeit his movement to gain the aiming bonus.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "natural_leader": {
+    "description": "A character with Natural Leader increases his command range by 2u\"\\u0022\".",
+    "prerequisite": {
+      "command": 1
+    }
+  },
+  "night_fighter": {
+    "description": "The character is well versed in dispatching an opponent at a distance in the dark of night. When making a ranged or magic attack against a character with stealth or Prowl, this character automatically misses the target only if he is 8u\"\\u0022\" or farther away (instead of 5u\"\\u0022\" away).",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "parry": {
+    "description": "While armed with a hand weapon, the character cannot be targeted by free strikes.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "pathfinder": {
+    "description": "The character can move over rough terrain without penalty.",
+    "prerequisite": {
+      "survival": 1
+    }
+  },
+  "poison_resistance": {
+    "description": "The character gains boosted rolls to resist poisons and toxins.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "port_of_call": {
+    "description": "A character with Port of Call can always find his way home again. For each level of Navigation, a character can nominate one location he’s visited more than once as a Port of Call. When traveling to a Port of Call and using the Navigation skill (p. 186), treat any results worse than u\"\\u0022\"Arrive as plannedu\"\\u0022\" as u\"\\u0022\"Arrive as planned.u\"\\u0022\"",
+    "prerequisite": {
+      "navigation": 1
+    }
+  },
+  "precision_strike": {
+    "description": "When the character hits with a melee attack, he chooses the branch of the targetu\"\\u0027\"s life spiral or the column of the targetu\"\\u0027\"s damage grid that is hit, if applicable.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "press_the_attack": {
+    "description": "When this character slams an enemy, immediately after the slam is resolved this character can advance directly toward the slammed enemy up to the distance the slammed enemy was moved and then make a melee attack against that enemy.",
+    "prerequisite": {
+      "shield_slam": true,
+      "shield": 3
+    }
+  },
+  "privilege": {
+    "description": "Whether he was born into an ancient bloodline or a family that purchased status, this character is afforded the rights of a noble. He is immune to persecution for petty crimes and can be tried only by a court of his peers. Should he be found guilty of a high crime, he has the right to be executed in the style befitting a noble. Each kingdom has distinct benefits and obligations for those born of privilege. With a successful Etiquette skill roll, this character can demand hospitality and request aid from other nobles not at war with his kingdom. Additionally, the character gains +2 on social skill rolls when dealing with those beneath his station who recognize his status and respect the nobility.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "prowl": {
+    "description": "The character is virtually invisible while in the shadows or in terrain that grants a degree of concealment. The character gains stealth (p. 220) while within terrain that provides concealment, the AOE of a spell that provides concealment, or the AOE of a cloud effect.",
+    "prerequisite": {
+      "sneak": 1
+    }
+  },
+  "pursuit": {
+    "description": "The character can spend 1 feat point during his turn to use this ability. When this ability is used, the character designates one enemy. For the rest of the encounter, when that enemy moves during his turn, immediately after the enemy ends his movement this character can make a full advance. A character can use this benefit only once per encounter unless the original subject of this ability is destroyed, at which point the character can spend a feat point to use this benefit on a new enemy.",
+    "prerequisite": {
+      "tracking": 3
+    }
+  },
+  "quick_work": {
+    "description": "When this character kills one or more enemies with a melee attack during his combat action, immediately after that attack is resolved this character can make one ranged attack. To make a ranged attack, the characteru\"\\u0027\"s ranged weapon must be loaded.",
+    "prerequisite": {
+      "agl": 5
+    }
+  },
+  "rallying_cry": {
+    "description": "This character can spend a feat point to use Rallying Cry. For one round, this characteru\"\\u0027\"s command range is doubled and friendly characters in his command range, including this character, become fearless (p. 224).",
+    "prerequisite": {
+      "command": 3
+    }
+  },
+  "relentless_charge": {
+    "description": "This character ignores penalties for rough terrain while charging.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "resourceful": {
+    "description": "This character can upkeep spells on steamjacks he controls without spending focus or gaining fatigue points.",
+    "prerequisite": {
+      "mechanikal_engineering": 3
+    }
+  },
+  "retaliatory_strike": {
+    "description": "When this character is hit by a melee attack made by an enemy at any time other than during his own turn, after the attack is resolved the character can spend 1 feat point to immediately make one normal melee attack against the enemy that hit him.",
+    "prerequisite": {
+      "phy": 7
+    }
+  },
+  "return_fire": {
+    "description": "Once per round when this character is missed by an enemyu\"\\u0027\"s ranged attack, immediately after the attack is resolved he can make one normal attack against the attacking enemy. To make a ranged attack, the characteru\"\\u0027\"s ranged weapon must be loaded.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "ride_by_attack": {
+    "description": "While mounted, this character can combine his movement and action during his turn to make a Ride-By Attack. The character declares a Ride-By Attack at the start of his Activation Phase. He makes a full advance and can halt his movement at any point to make his attacks. After his attacks, he resumes his movement.",
+    "prerequisite": {
+      "riding": 2
+    }
+  },
+  "riposte": {
+    "description": "Once per round when this character is missed by an enemy’s melee attack, immediately after the attack is resolved he can make one normal attack against the attacking enemy. To make a ranged attack, the characteru\"\\u0027\"s ranged weapon must be loaded.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "rock_solid": {
+    "description": "This character and friendly characters B2B with him cannot be knocked down. The character loses this ability while he is mounted.",
+    "prerequisite": {
+      "phy": 8
+    }
+  },
+  "roll_with_it": {
+    "description": "When the character would ordinarily be knocked down, he goes prone instead. The character loses this ability while he is mounted.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "saddle_shot": {
+    "description": "This character does not suffer the firing from horseback penalty when making ranged attacks while mounted (see p. 214).",
+    "prerequisite": {
+      "riding": 1
+    }
+  },
+  "scrounge": {
+    "description": "The character is adept at finding hard to acquire or expensive replacement parts to repair steamjacks. Given a day to find the parts in a town or industrialized settlement, the character can find any part needed (or something close enough he can bodge it together). The character can purchase steamjack parts, weapons, and gear for half the normal price.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "sentry": {
+    "description": "Once per round when an enemy is placed in or moves into the line of sight of this character, this character can immediately make one attack, targeting that enemy.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "set_defense": {
+    "description": "While this character is armed with a weapon that has reach, an enemy in this character’s front arc suffers –2 on charge, slam power attack, and impact attack rolls against him.",
+    "prerequisite": {
+      "great_weapon": 2
+    }
+  },
+  "shadow_magic": {
+    "description": "When this character casts a spell, no spell runes appear and magically sensitive characters cannot sense the characteru\"\\u0027\"s magic. A focuser with this ability cannot be detected by another focuser with the Magic Sensitivity archetype benefit.",
+    "prerequisite": {
+      "gifted": true,
+      "sneak": 2
+    }
+  },
+  "shield_guard": {
+    "description": "Once per turn, when a friendly character is directly hit by an attack while within 2u\"\\u0022\" of this character, this character can choose to be directly hit instead. This character cannot use Shield Guard if he is incorporeal, knocked down, prone, or stationary.",
+    "prerequisite": {
+      "shield": 1
+    }
+  },
+  "shield_slam": {
+    "description": "When this character charges while armed with a shield, instead of making a charge attack, he can spend a feat point to slam his target, making an attack roll with his shield. A character who slams another character with a larger base suffers –2 to this attack roll. The POW of the slam damage roll is equal to the STR of the attacking character plus the POW of the shield. The POW of collateral damage is equal to the STR of the attacking character.",
+    "prerequisite": {
+      "str": 6
+    }
+  },
+  "signal_language": {
+    "description": "The character can spend time developing a coded signal language for use with his party using the same rules as creating a code. The language can convey simple messages or commands and has a Cryptography target number based on the target number used during the code’s creation. The signal language can be taught to any character that has Intellect 3 or greater.",
+    "prerequisite": {
+      "cryptography": 1
+    }
+  },
+  "sniper": {
+    "description": "When this character forfeits his movement to aim during his turn, the characteru\"\\u0027\"s first ranged attack that turn gains boosted damage.",
+    "prerequisite": {
+      "rifle": 3
+    }
+  },
+  "specialization": {
+    "description": "The character does not suffer attack roll penalties when attacking with a weapon of the type chosen, such as a blasting pike. A character can have this ability several times, each time choosing a different weapon.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "steady": {
+    "description": "This character cannot be knocked down. The character loses this ability while he is mounted.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "steamo": {
+    "description": "The character can reroll failed Mechanikal Engineering rolls to repair or dismantle steamjacks. Each roll can be rerolled only once as a result of Steamo.",
+    "prerequisite": {
+      "mechanikal_engineering": 2
+    }
+  },
+  "sucker": {
+    "description": "If this character is directly hit by an enemy ranged attack, he can choose a friendly living non-incorporeal character within 2u\"\\u0022\" of him to be directly hit instead. That character is automatically hit and suffers all damage and effects.",
+    "prerequisite": {
+      "intimidation": 3
+    }
+  },
+  "swift_hunter": {
+    "description": "When this character incapacitates an enemy by using a normal ranged attack, immediately after the attack is resolved he can advance up to twelve feet (2u\"\\u0022\").",
+    "prerequisite": {},
+    "agl": 6
+  },
+  "swift_rider": {
+    "description": "While riding a mount, the character can move over rough terrain without penalty.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "take_down": {
+    "description": "This character can use Take Down anytime he incapacitates another character with an attack and while the incapacitated character is in this characteru\"\\u0027\"s melee range. The incapacitated character regains 1 vitality point and is no longer incapacitated but is considered to be manacled, tied up, unconscious, or otherwise out of action for the rest of the encounter. Once the combat portion of the encounter has ended, the subject of the take down is at the mercy of the victors to be questioned or worse.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "targeteer": {
+    "description": "When the character hits with a ranged attack, he chooses the branch of the targetu\"\\u0027\"s life spiral or the column of the targetu\"\\u0027\"s damage grid that is hit, if applicable.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "team_leader": {
+    "description": "When this character gains a feat point, instead of keeping it himself he can give it to another character currently in his command range.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "traceless_path": {
+    "description": "The character knows how to conceal his trail when moving over land. Though he can move at only half his usual rate of speed while using this ability, either on foot or horseback, anyone attempting to follow his trail has +3 added to his skill roll target number.",
+    "prerequisite": {
+      "sneak": 2
+    }
+  },
+  "truth_reader": {
+    "description": "The character automatically knows when someone is lying to him. Keep in mind that knowing someone is lying is different than discerning the truth.",
+    "prerequisite": {
+      "detection": 3
+    }
+  },
+  "tune_up": {
+    "description": "While B2B with a steamjack he controls, this character can spend a quick action to use Tune Up. During its turn this round, the steamjack gains either boosted attack or damage rolls.",
+    "prerequisite": {
+      "mechanikal_engineering": 3
+    }
+  },
+  "two_weapon_fighting": {
+    "description": "While fighting with a one-handed weapon or pistol in each hand, the character gains an additional attack for the second weapon. He suffers –2 on attacks rolls with the second weapon while doing so.",
+    "prerequisite": {
+      "agl": 4
+    }
+  },
+  "university_education": {
+    "description": "The character can reroll failed Lore and Research skill rolls. Each roll can be rerolled only once as a result of University Education.",
+    "prerequisite": {
+      "none": true
+    }
+  },
+  "waylay": {
+    "description": "When an attack made by this character has the chance to knock out a target, increase the target number for the Willpower roll to resist the knockout by 2.",
+    "prerequisite": {
+      "none": true
+    }
+  }
+}

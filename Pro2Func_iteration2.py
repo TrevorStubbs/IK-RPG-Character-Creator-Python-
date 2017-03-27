@@ -122,7 +122,7 @@ def setCharLang(char_race):
 def setCharHeight(char_race, char_sex):
     if char_race == 1:
         #human height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == "m" or char_sex == "M":
             print("Human males are 61-75 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -133,7 +133,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     elif char_race == 2:
             # dwarf height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == "m" or char_sex == "M":
             print("Dwarf males are 52-60 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -144,7 +144,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     elif char_race == 3:
         # gobber height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == "m" or char_sex == "M":
             print("Gobber males are 33-42 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -155,7 +155,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     elif char_race == 4:
         # Isoan height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Iosan males are 65-75 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -166,7 +166,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     elif char_race == 5:
         # Nyss height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Nyss males are 67-77 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -177,7 +177,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     elif char_race == 6:
         # Ogrun height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Ogrun males are 90-105 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -188,7 +188,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     else:
         # Trollkin height
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Trollkin males are 71-84 inches in height.")
             char_height = str(input("How tall is your character? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -203,7 +203,7 @@ def setCharWeight(char_race, char_sex):
     # Setting your character's weight
     if char_race == 1:
         #human weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Human males weigh 110-200 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -214,7 +214,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? "))      
     if char_race == 2:
         #dwarf weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Dwaf males weigh 150-190 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -225,7 +225,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? ")) 
     if char_race == 3:
         #gobber weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Gobber males weigh 42-60 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -236,7 +236,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? "))   
     if char_race == 4:
         #Iosan weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Iosan males weigh 125-180 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -247,7 +247,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? ")) 
     if char_race == 5:
         #Nyss weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Nyss males weigh 140-195 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -258,7 +258,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? ")) 
     if char_race == 6:
         #human weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Ogrun males weigh 450-500 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -269,7 +269,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? "))
     if char_race == 7:
         #Trollkin weight
-        if char_sex == "Male" or char_race == "male" or char_race == 'm' or char_race == 'M':
+        if char_sex == "Male" or char_sex == "male" or char_sex == 'm' or char_sex == 'M':
             print("Trollkin males weigh 250-330 pounds.")
             char_height = str(input("How much does your character weigh? "))
         elif char_sex == "Female" or char_sex == "female" or char_sex == "f" or char_sex == "F":
@@ -279,6 +279,54 @@ def setCharWeight(char_race, char_sex):
             print("Trollkin weigh between 150-330 pounds.")
             char_height = str(input("How much does your character weigh? "))
     return char_height  
+
+def setCharArch(char_race):
+    # Selecting Archtype
+    # 1 = Gifted, 2 = Intellectual, 3 = Mighty, 4 = Skilled
+    print("Chose your character's archtype.")
+    #for humans, dwarfs, iosans
+    if char_race == 1 or char_race == 2 or char_race == 4:
+        char_arch = int(input("1. Gifted \n2. Intellectual \n3. Mighty \n4. Skilled \nWhat is your character's archtype? "))
+        #for Nyss and Trollkin
+    elif char_race == 5 or char_race == 7:
+        char_arch = int(input("1. Gifted \n2. Mighty \n3. Skilled \nWhat is your character's archtype? "))
+        if char_arch == 2:
+            char_arch = 3
+        elif char_arch == 3:
+            char_arch = 4
+    #for Gobber
+    elif char_race == 3:
+        char_arch = int(input("1. Intellectual \n2. Mighty \n3. Skilled \nWhat is your character's archtype? "))
+        if char_arch == 1:
+            char_arch = 2
+        elif char_arch == 2:
+            char_arch = 3
+        elif char_arch == 3:
+            char_arch = 4
+    #for Ogrun
+    elif char_race == 6:
+        char_arch = int(input("1. Mighty \n2. Skilled \nWhat is your character's archtype? "))
+        if char_arch == 1:
+            char_arch = 3
+        elif char_arch == 2:
+            char_arch = 4
+    return char_arch
+
+def setCharArc(char_race):
+    # Gifted
+    if char_race == 1 or char_race == 2 or char_race == 4:
+        # Chose arcane school and set base arcane value
+        print("Your gifted character needs to choose how they controls magic.")
+        arcane_school = int(input("1. Focuser \n2. Will Weaver \nHow does your character control magic? "))
+        if arcane_school == 1:
+            char_arc = 2
+        else: 
+            char_arc = 3
+    else:
+        arcane_school = 2
+        char_arc = 3
+    return char_arc
+
     
 def main():
     # These next few variables fill in the top part of the character sheet
@@ -292,6 +340,16 @@ def main():
     char_race = int(input("1. Human \n2. Dwarf\n3. Gobber\n4. Iosan\n5. Nyss\n6. Ogrun\n7. Trollkin\nWhat is your character's race? "))
     race_stats = setRaceStats(char_race)
     
+    char_phy = race_stats[0] 
+    char_str = race_stats[1]
+    char_spd = race_stats[2]
+    char_agi = race_stats[3]
+    char_prw = race_stats[4]
+    char_poi = race_stats[5]
+    char_int = race_stats[6]
+    char_arc = race_stats[7]
+    char_per = race_stats[8]
+    
     #set the char languages.
     char_lang = setCharLang(char_race)
     lang_one = char_lang[0]
@@ -304,8 +362,11 @@ def main():
     
     #set the char's weight
     char_weight = setCharWeight(char_race, char_sex)
-    
-    
+    #set the char's archtype
+    char_arch = setCharArch(char_race)
+    #set char's arc if they are gifted
+    if char_arch == 1:
+        char_arc = setCharArc(char_race) 
     
     
 if __name__ == "__main__": main()    
