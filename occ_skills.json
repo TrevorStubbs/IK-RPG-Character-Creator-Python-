@@ -1,0 +1,203 @@
+{
+  "alchemy": {
+    "description": "The science of alchemy is a practical and empirical pursuit in the Iron Kingdoms. Apothecaries, surgeons, mercenaries, and adventurers employ its fruits freely. A character with this skill has learned the basics of alchemy and can create simple alchemical compounds provided he has access to the proper materials and an alchemical lab. (pg. 172)",
+    "stat": "intellect",
+    "rolls": "To attempt an alchemical creation, make an INT + Alchemy roll against a target number set by the Game Master or the formula the character is trying to brew (see Alchemy, p. 290)."
+  },
+  "animal_handling": {
+    "description": "Steam and mechanika technology is used to simplify life in the prosperous urban areas of the Iron Kingdoms, but adventurers traveling outside the cities still come across numerous domesticated and wild animals. A character with this skill is comfortable around animals and can find ways of making them do what he wants. (pg. 174)",
+    "stat": "social",
+    "rolls": "Characters with one or more levels of Animal Handling can attempt to urge an animal to perform an action it does not want to make or otherwise bend it to his will. This can allow him to bring a panicking horse under control or convince a pack of angry dogs that they do not want to attack him."
+  },
+  "bribery": {
+    "description": "The character is a shrewd criminal negotiator capable of buying his way out of trouble (or deeper into trouble, as the situation dictates.) He knows whom to contact for underhanded favors and knows how to estimate the cost for specific bribes. (pg. 174)",
+    "stat": "social",
+    "rolls": "When your character makes a bribery attempt, you make a roll using a stat determined by the Game Master and add your characteru\"\\u0027\"s Bribery level."
+  },
+  "climbing": {
+    "description": "The character knows how to climb sheer surfaces. Add this skill to the characteru\"\\u0027\"s AGL when climbing. (pg. 175)",
+    "stat": "agility",
+    "rolls": "When your character attempts to climb a surface, you make an AGL + Climbing roll against a target number set by the Game Master to determine if the roll is a success."
+  },
+  "command": {
+    "description": "The character has been trained to lead subordinates in the field. (pg. 175)",
+    "stat": "social",
+    "rolls": "A character with the Command skill can issue directives to men under his command that they obey. When a player character is issued an order, the player determines how his character responds to the order. In the case of NPCs, the commanding character makes a roll to determine how his directives are received."
+  },
+  "craft": {
+    "description": "Craft skills enable a character to manufacture or repair items. When a player selects this skill, he must determine the specific type of items his character can craft. This skill can be taken multiple times, each with a different area of specialization. The recommended Craft skills for player characters are Craft (carpentry), Craft (gunsmithing), Craft (metalworking), and Craft (tanning). Skills like Craft (pottery), Craft (stoneworking), and Craft (tailoring) are also an option but are more common to non-player characters. (pg. 176)",
+    "stat": "intellect",
+    "": {}
+  },
+  "cryptography": {
+    "description": "The character is well versed in writing, using, and breaking codes. (pg. 176)",
+    "stat": "intellect",
+    "rolls": "When your character attempts to break a code, you make an INT + Cryptography roll against a target number set by the Game Master to determine if the roll is a success."
+  },
+  "deception": {
+    "description": "Various situations in the Iron Kingdoms can be shifted to your characteru\"\\u0027\"s favor with the appropriate application of a falsehood. A character skilled in Deception can be a great asset to many adventuring parties. (pg. 177)",
+    "stat": "social",
+    "rolls": "When your character tells a lie, you make a roll using a stat determined by the Game Master and add your characteru\"\\u0027\"s Deception level."
+  },
+  "detection": {
+    "description": "The Detection skill measures how refined the characteru\"\\u0027\"s skills of observation are. Whether scoping out a dark corner to detect a hidden foe or combing the scene of a battle to discern the nature of the combatants, a keenly perceptive character can glean information hidden from less astute eyes. (pg. 177)",
+    "stat": "perception",
+    "rolls": "When your character tries to spot something hidden, you make a PER + Detection roll against a target number set by the Game Master to determine if the check is a success."
+  },
+  "disguise": {
+    "description": "The character is skilled in the art of disguise. He can utilize clothing and accessories to mask his true identity in order to gain access to restricted areas, avoid paying back a debt, or lay low rather than face criminal charges. (pg. 178)",
+    "stat": "intellect",
+    "rolls": "When a player character takes the time to create a disguise, he creates the target number for other characters to beat. Rather than making the Disguise roll himself, a player should tell the Game Master his INT + Disguise level, and then the Game Master makes the roll. The Game Master then informs the player how confident he is that he created a disguise to the best of his abilities: doubtful (2d6 roll of 2–5), confident (2d6 roll of 6–8), or very confident (2d6 roll of 9–12). Based on this information, the character can choose to craft a new disguise, but it takes additional time to do so. The Game Master uses the Disguise roll and the table below to determine the target number that other characters use to attempt to perceive the character beneath the disguise."
+  },
+  "driving": {
+    "description": "The character is skilled at driving carts and carriages. A character does not need to make a skill roll to use this skill unless he wishes to move particularly fast, needs to avoid an accidental collision, or otherwise performs a dangerous maneuver. (pg. 179)",
+    "stat": "agility",
+    "rolls": "When your character attempts a tricky driving stunt, you make an AGL + Driving roll against a target number set by the Game Master to determine if the check is a success. The following table offers some guidelines for Driving target numbers."
+  },
+  "escape_artist": {
+    "description": "The character is a skilled escape artist. He can contort his body to slip from virtually any bonds. (pg. 179)",
+    "stat": "agility",
+    "rolls": "A character bound or chained struggles to escape his bonds when his captors are not watching. Each Escape Artist roll represents five minutes of the characteru\"\\u0027\"s time laboring to get free. Make an AGL + Escape Artist roll against a target number set by the Game Master to determine if the roll is a success."
+  },
+  "etiquette": {
+    "description": "Etiquette is the skill of comporting oneself in polite society, especially with regard to the disparate traditions of the various Iron Kingdoms. A character with this skill knows how to interact with the upper classes, as well as members of theocracy, foreign dignitaries, and heads of state. He is capable of speaking eloquently and has a refined knowledge of social protocol. (pg. 180)",
+    "stat": "social",
+    "rolls": "An Etiquette skill roll should be required only when the character interacts with those high above his station, tries to cover up a social gaffe, takes part in an unfamiliar ceremony, or deals with foreign dignitaries."
+  },
+  "fell_calling": {
+    "description": "The character is skilled at using his powerful voice to inspire his friends, or as a weapon against his enemies. (pg. 181)",
+    "stat": "intellect",
+    "rolls": "Some fell calls are attacks. A fell call attack follows all the other rules for ranged attacks (p. 211). The character’s POI + Fell Calling level is added to the roll against a targetu\"\\u0027\"s DEF number."
+  },
+  "forensic_science": {
+    "description": "Forensic science is the application of deductive reasoning and scientific principles to reconstruct the events of a crime based on evidence left at a scene. A character with this skill is adept at determining a likely sequence of events, gathering clues to the identity of a perpetrator, and collecting physical evidence. (pg. 181)",
+    "stat": "intellect",
+    "rolls": "When a character tries to reconstruct a crime or piece together a sequence of events from physical evidence, make a INT + Forensic Science roll against a target number set by the Game Master. The character can make one roll for every half hour he investigates the physical clues at the scene of a crime or other event that involves physical evidence. A true expert can even discover if evidence has been tampered with."
+  },
+  "forgery": {
+    "description": "The character is a skilled forger capable of creating fake documents or currency. (pg. 181)",
+    "stat": [
+      "agility",
+      "intellect"
+    ],
+    "rolls": "In criminal circles, forgers are seen as true artists. Their work is subtle and carries greater risks than any act of mere petty theft, since the forger steals authority and imperils security. Forging state documents and currency is not as simple as making a flawless match of content. The forger must also consider paper weight and texture, ink, the particulars of signature, and a thousand other details. As a result, the forging of complex documents that come under significant scrutiny, such as writs of passage across border or banking documents, cannot be produced with less than a weeku\"\\u0027\"s labor."
+  },
+  "gambling": {
+    "description": "The character is skilled at gaining the upper hand in games of chance and sport. He relies on skill, knowledge and manipulation of the odds, a firm knowledge of the rules of the game, but most of all, he relies on his ability to read the other playersu\"\\u0027\" intentions and discern their tells. (pg. 182)",
+    "stat": "perception",
+    "rolls": "Characters use this skill when resolving a game of chance in which they are active participants. Each participant makes a PER + Gambling roll. The character with the highest total wins."
+  },
+  "interrogation": {
+    "description": "The character is skilled in the art of extracting information from those within his power. His methods might rely on a combination of threat, coercion, cajoling, mental cruelty, or torture. Often sleep and hunger deprivation are used to prepare a subject for interrogation. (pg. 182)",
+    "stat": "intellect",
+    "rolls": "When your character tries to interrogate a subject, both he and his subject make rolls. The interrogator adds his Interrogation and INT to the roll. The subject adds his PHY and INT."
+  },
+  "intimidation": {
+    "description": "A characteru\"\\u0027\"s Intimidation skill determines how threatening and fearsome the character is. He can use it to cow others into submission, get enemies to back down from a fight, or scare people out of his way. (pg. 183)",
+    "stat": "social",
+    "rolls": "When your character attempts to intimidate a target, you make a roll using a stat determined by the Game Master and add your characteru\"\\u0027\"s Intimidation level. The stat used for the Intimidation roll should reflect the method of intimidation employed. If the character is threatening grievous bodily harm, Strength might be the most appropriate stat. If the character alludes to a vague threat to a business venture, Perception could be more appropriate."
+  },
+  "jumping": {
+    "description": "The characteru\"\\u0027\"s athletic abilities allow him to hurl his body over obstacles and distances. (pg. 183)",
+    "stat": "physique",
+    "rolls": "To determine the horizontal distance a character can jump, make a PHY + Jumping roll and consult the following chart. A character with the Bounding Leap archetype benefit adds six feet (1u\"\\u0022\") to the distance he jumps."
+  },
+  "law": {
+    "description": "The character is versed in the common laws of the Iron Kingdoms and the more specific laws of each individual kingdom. A character with the Law skill has a general awareness of all aspects of criminality and an understanding of how each crime is regarded throughout each kingdom. (pg. 184)",
+    "stat": "intellect",
+    "rolls": "The character can give basic legal advice without a die roll. When a character needs to employ a finer point of law, make an INT + Law roll against a target number set by the Game Master to determine if the roll is a success. Putting together a simple legal defense or a case for prosecution requires a successful skill roll verses a target number of 11. Putting together a more serious case requires a successful skill roll against a target number of 13 or more."
+  },
+  "lock_picking": {
+    "description": "The Lock Picking skill allows a character to attempt to open doors without the keys and safes without the combinations. (pg. 184)",
+    "stat": "agility",
+    "rolls": "Each attempt to pick a lock requires two minutes unless the character takes his time. When a character needs to pick a lock, make a AGL + Lock Picking roll against a target number set by the Game Master to determine if the roll is a success. The Game Master decides how well made the lock or safe is."
+  },
+  "lore": {
+    "description": "The character has spent a considerable amount of time studying a particular subject and can call on a wealth of useful information when that subject comes up. (pg. 185)",
+    "stat": "intellect",
+    "rolls": "When a character uses this skill, make an INT + Lore roll."
+  },
+  "mechanikal_engineering": {
+    "description": "Though the arcane arts are critical to modern warfare in the Iron Kingdoms, a foundation of advanced mathematics and physics underpins the technology of firearms, steamjacks, mechanika, and siege warfare. A character trained in mechanikal engineering understands how to build and repair mechanikal as well as ordinary mechanical devices. (pg. 186)",
+    "stat": "intellect",
+    "rolls": "Mechanikal Engineering rolls are made when a character attempts to assemble or create mechanika (p. 280) or when he repairs a steamjack (p. 319). The skill can also be used to understand or interact with problems of a scientific nature: for example, finding a way to salvage a warjack at the bottom of a ravine, or disarming an elaborate trap found in an Orgoth tomb."
+  },
+  "medicine": {
+    "description": "The character is a skilled physician and can treat the injured. (pg. 186)",
+    "stat": "intellect",
+    "rolls": "When a character tries to heal the sick or wounded, make an INT+ Medicine roll against a target number determined by the action attempted."
+  },
+  "navigation": {
+    "description": "The character is adept at using the stars and other natural indicators to determine his location. (pg. 186)",
+    "stat": "perception",
+    "rolls": "Characters with one or more levels in Navigation can get from point A to point B whether or not they follow the most direct route. This might allow them to bypass tolls, highwaymen, checkpoints, or other undesirable interactions."
+  },
+  "negotiation": {
+    "description": "Negotiation is the peaceful resolution of a conflict. A character with Negotiation might try to haggle for a lower price with a shopkeeper or talk his way out of a potential fight with a Bog Trog tribe. (pg. 187)",
+    "stat": "social",
+    "rolls": "Characters with the Negotiation skill can use it when resolving any dispute or transaction the Game Master deems appropriate. It commonly applies to buying and selling goods, negotiating a contract, or talking one’s way out of a fight. When your character makes a negotiation attempt, roll using a stat determined by the Game Master and add your character’s Negotiation level."
+  },
+  "oratory": {
+    "description": "The character is a skilled public speaker capable of spurring a crowd to action or calming an angry mob. (pg. 189)",
+    "stat": "social",
+    "rolls": "When your character makes an oratory attempt, you make a roll using a stat determined by the Game Master and add your characteru\"\\u0027\"s Oratory level. The following chart offers a sample range of target numbers."
+  },
+  "pickpocket": {
+    "description": "The character has nimble fingers and can relieve others of their personal belongs without their notice. (pg. 189)",
+    "stat": "agility",
+    "rolls": "When a character attempts to relieve someone else of his belongings, make an AGL+ Pickpocket roll against a target number set by the Game Master to determine if the roll is a success."
+  },
+  "research": {
+    "description": "Given access to the proper archive a character with the research skill can find any available information. (pg. 190)",
+    "stat": "intellect",
+    "rolls": "A character with access to a library, set of records, or other trove of knowledge can research a subject pertaining to the information contained within the archive. To use this skill, first declare what subject the character is researching. The character must then spend at least four hours researching the archive, after which his player can make an INT + Research roll."
+  },
+  "riding": {
+    "description": "The character is a skilled rider capable of controlling his mount with unparalleled ease. In dangerous situations like the heat of battle, a trained rideru\"\\u0027\"s horse is a deadly weapon rather than a terrified beast as prone to injure its master as its enemies. A character does not need to make a skill roll to use this skill unless he wishes to make particularly dangerous maneuver or needs to avoid being thrown from his mount. (pg. 190)",
+    "stat": "agility",
+    "rolls": "When a character attempts a particular stunt with a mount, make an AGL + Riding roll against a target number set by the Game Master to determine if the roll is a success."
+  },
+  "rope_use": {
+    "description": "The character understands the proper uses of various knots, and how to subdue others by tying them up. (pg. 191)",
+    "stat": "agility",
+    "rolls": "When a character ties a knot that no one will be trying to escape from, such as for securing rigging before repelling down a cliff, no roll is necessary. When a character puts his skills to use to tie up a subject, the character must make an AGL + Rope Use roll. The total for this roll is the target number the subject uses if he attempts to escape from his bonds (see Escape Artist p. 179)."
+  },
+  "sailing": {
+    "description": "The character understands the ins and outs of operating a ship. The character does not need to make a skill roll unless the weather is dangerous, he needs to avoid an accidental collision, or is otherwise performing a hazardous maneuver. (pg. 191)",
+    "stat": [
+      "intellect",
+      "strength"
+    ],
+    "rolls": "When a character needs to perform a difficult maneuver aboard ship, make a STR or INT (whichever is lower) + Sailing roll against a target number set by the Game Master to determine if the roll is a success."
+  },
+  "seduction": {
+    "description": "Seduction is the ability to foster romantic attachment in another sexually compatible individual. A character skilled in the seductive arts can use such romantic entanglements to his advantage for information, wealth, or political favor.  (pg. 192)",
+    "stat": "social",
+    "rolls": "When your character makes a seduction attempt, make a roll using a stat determined by the Game Master and add your characteru\"\\u0027\"s Seduction level. The stat used for the Seduction roll should reflect the method of seduction employed. If the character is depending on physical qualities, PHY could be the most appropriate skill. If he is employing poetry to woo his target, INT is more appropriate."
+  },
+  "sneak": {
+    "description": "The Sneak skill measures how capable a character is at hiding and moving undetected. It can apply to many situations, whether trying to sneak past a sleeping troll or silently moving into striking range of a target. (pg. 193)",
+    "stat": "agility",
+    "rolls": "Any time a character attempts to hide, move silently, or follow another creature without being detected, the Game Master should make an AGL + Sneak roll for the character."
+  },
+  "streetwise": {
+    "description": "The character understands the streets and the criminal underworld. He can find markets for stolen or illicit goods, set up meets, and steer clear of trouble and unwanted attention. (pg. 193)",
+    "stat": "perception",
+    "rolls": "Streetwise can be used for reaching out to underworld contacts, for locating or selling stolen or illicit goods."
+  },
+  "survival": {
+    "description": "The character is versed in building shelter, keeping warm, foraging for food, and sustaining life in the wilds. (pg. 194)",
+    "stat": "perception",
+    "rolls": "Characters with one or more levels in Survival can use the skill while away from the creature comforts afforded by urban life in the Iron Kingdoms."
+  },
+  "swimming": {
+    "description": "The character is a skilled swimmer comfortable with being in the water. (pg. 194)",
+    "stat": "strength",
+    "rolls": "To determine the speed a character can swim, make a STR + Swimming roll."
+  },
+  "tracking": {
+    "description": "The character understands how to follow a quarry through the wilderness by the signs left by its passage. When a trail runs cold, he knows the steps to take to reacquire the quarry and continue the hunt. (pg. 194)",
+    "stat": "perception",
+    "rolls": "When a character tracks his quarry, make a PER + Tracking roll against a target number set by the Game Master to determine if the roll is a success."
+  }
+}

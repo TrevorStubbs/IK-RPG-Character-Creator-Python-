@@ -1,0 +1,46 @@
+{
+  "archery": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s POI when making attacks with bows.",
+    "stat": "poise"
+  },
+  "crossbow": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s POI when making attacks with crossbows.",
+    "stat": "poise"
+  },
+  "great_weapon": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s PRW when making attacks with great weapons. Some great weapons require two hands to wield. A character cannot wield more than one great weapon at a time.",
+    "stat": "prowess"
+  },
+  "hand_weapon": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s PRW when making attacks with melee hand weapons.",
+    "stat": "prowess"
+  },
+  "lance": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s PRW when making attacks with lance weapons. A character cannot wield another lance or great weapon while wielding a lance.",
+    "stat": "prowess"
+  },
+  "light_artillery": {
+    "description": "The character is knowledgeable in the operation, loading, and transport of light artillery weapons. Each level of this skill adds to the characteru\"\\u0027\"s POI when making attacks with light artillery.",
+    "stat": "poise"
+  },
+  "pistol": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s POI when making attacks with pistols.",
+    "stat": "poise"
+  },
+  "rifle": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s POI when making attacks with rifles.",
+    "stat": "poise"
+  },
+  "shield": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s PRW when making attacks with a shield. Additionally, a character armed with a shield gains +1 ARM for each level of the Shield skill he has against attacks originating in his front arc. This bonus is not cumulative with additional shields.",
+    "stat": "prowess"
+  },
+  "thrown_weapon": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s PRW when making attacks with thrown weapons or slings.",
+    "stat": "prowess"
+  },
+  "unarmed_combat": {
+    "description": "Each level of this skill adds to the characteru\"\\u0027\"s PRW when making attacks with his bare hands.",
+    "stat": "prowess"
+  }
+}

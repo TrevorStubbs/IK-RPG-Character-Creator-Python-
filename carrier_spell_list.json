@@ -1,0 +1,337 @@
+{
+  "arcane_mechanik": {
+    "cost_1": [
+      "jackhammer",
+      "jump Start",
+      "Locomotion",
+      "Power Booster",
+      "Protection from Electricity",
+      "Return Fire",
+      "Short Out"
+    ],
+    "cost_2": [
+      "Arcantrik Bolt",
+      "Electrify",
+      "Fortify",
+      "Polarity Shield",
+      "Positive Charge",
+      "Redline",
+      "Refuge",
+      "Temper Metal"
+    ],
+    "cost_3": [
+      "Broadside",
+      "Electrical Blast",
+      "Fail Safe",
+      "Force Field",
+      "Full Throttle",
+      "Grind",
+      "Guided Fire",
+      "Iron Aggression",
+      "Superiority"
+    ],
+    "cost_4": [
+      "Black Out",
+      "Tide of Steel",
+      "Voltaic Lock"
+    ]
+  },
+  "arcanist": {
+    "cost_1": [
+      "Arcane Strike",
+      "Blizzard",
+      "Fire Starter",
+      "Guided Blade",
+      "Influence",
+      "Light in the Darkness",
+      "Protection from Cold",
+      "Protection from Corrosion",
+      "Protection from Electricity",
+      "Protection from Fire",
+      "Storm Tossed"
+    ],
+    "cost_2": [
+      "Arcane Bolt",
+      "Ashen Cloud",
+      "Aura of Protection",
+      "Banishing Ward",
+      "Celerity",
+      "Foxhole",
+      "Hand of Fate",
+      "Howling Flames",
+      "Icy Grip",
+      "Occultation",
+      "Rock Wall",
+      "Telekinesis",
+      "True Sight",
+      "Vision",
+      "Wind Blast"
+    ],
+    "cost_3": [
+      "Fog of War",
+      "Force Field",
+      "Hex Blast",
+      "Inhospitable Ground",
+      "Lightning Tendrils",
+      "Mirage",
+      "Rift",
+      "Rock Hammer",
+      "Zephyr"
+    ],
+    "cost_4": [
+      "Force Hammer",
+      "Overmind",
+      "Tempest"
+    ]
+  },
+  "gun_mage": {
+    "cost_1": [
+      "Return Fire",
+      "Rune Shot: Accuracy",
+      "Rune shot: Black Penny",
+      "Rune Shot: Brutal",
+      "Rune Shot: Iron Rot",
+      "Rune Shot: Molten Shot",
+      "Rune Shot: Silencer",
+      "Rune Shot: Spontaneous Combustion",
+      "Rune Shot: Thunderbolt"
+    ],
+    "cost_2": [
+      "Fire Group",
+      "Heightened Reflexes",
+      "Refuge",
+      "Rune Shot: Fire Beacon",
+      "Rune Shot: Shadow Fire",
+      "Rune Shot: Trick Shot",
+      "Snipe",
+      "True Sight"
+    ],
+    "cost_3": [
+      "Guided Fire",
+      "Rune Shot: Detonator",
+      "Rune Shot: Earth Shaker",
+      "Rune Shot: Phantom Seeker",
+      "Rune Shot: Spell Cracker"
+    ],
+    "cost_4": [
+      "Rune Shot: Freeze Fire",
+      "Rune Shot: Heart Stopper",
+      "Rune Shot: Momentum"
+    ]
+  },
+  "priest": {
+    "menoth": {
+      "cost_1": [
+        "Flames of Wrath",
+        "Guided Blade",
+        "Influence",
+        "Protection from Fire"
+      ],
+      "cost_2": [
+        "Ashen Cloud",
+        "Banishing Ward",
+        "Hymn of Battle",
+        "Hymn of Passage",
+        "Ignite",
+        "Immolation",
+        "Righteous Flames",
+        "Vision",
+        "Wall of Fire"
+      ],
+      "cost_3": [
+        "Cleansing Fire",
+        "Crevasse",
+        "Crusaders Call",
+        "Hex Blast",
+        "Lamentation",
+        "Purification",
+        "True Path"
+      ],
+      "cost_4": [
+        "Ashes to Ashes",
+        "Blazing Effigy",
+        "Hymn of Shielding"
+      ]
+    },
+    "morrow": {
+      "cost_1": [
+        "Blessing of Health",
+        "Guided Blade",
+        "Light in the Darkness",
+        "Solovin’s Boon"
+      ],
+      "cost_2": [
+        "Aura of Protection",
+        "Banishing Ward",
+        "Blade of Radiance",
+        "Blessings of War",
+        "Eyes of Truth",
+        "Hand of Fate",
+        "Shield of Faith",
+        "Triage",
+        "True Sight"
+      ],
+      "cost_3": [
+        "Blessing of Morrow",
+        "Crusader’s Call",
+        "Daylight",
+        "Prayer of Guidance",
+        "Sanguine Blessing",
+        "Sunburst",
+        "True Path"
+      ],
+      "cost_4": [
+        "Force of Faith",
+        "Heal",
+        "Star Fire"
+      ]
+    }
+  },
+  "sorcerer": {
+    "fire": {
+      "cost_1": [
+        "Fire Starter",
+        "Flames of Wrath",
+        "Protection from Fire"
+      ],
+      "cost_2": [
+        "Ashen Cloud",
+        "Extinguisher",
+        "Howling Flames",
+        "Ignite",
+        "Immolation",
+        "Wall of Fire"
+      ],
+      "cost_3": [
+        "Barrier of Flames",
+        "Cleansing Fire",
+        "Flare",
+        "Fuel the Flames",
+        "Inferno"
+      ],
+      "cost_4": [
+        "Ashes to Ashes",
+        "Blazing Effigy",
+        "Sea of Fire"
+      ]
+    },
+    "ice": {
+      "cost_1": [
+        "Blizzard",
+        "Ice Shield",
+        "Protection from Cold"
+      ],
+      "cost_2": [
+        "Chiller",
+        "Frostbite",
+        "Ice Bolt",
+        "Icy Grip",
+        "Shatter Storm",
+        "Staying Winter's Hand"
+      ],
+      "cost_3": [
+        "Brittle Frost",
+        "Deep Freeze",
+        "Frozen Ground",
+        "Hoarfrost",
+        "Winter Storm"
+      ],
+      "cost_4": [
+        "Freezing Grip",
+        "Freezing Mist",
+        "White Out"
+      ]
+    },
+    "stone": {
+      "cost_1": [
+        "Earth’s Cradle",
+        "Entangle",
+        "Stone Stance"
+      ],
+      "cost_2": [
+        "Battering Ram",
+        "Fortify",
+        "Fox Hole",
+        "Rock Wall",
+        "Solid Ground",
+        "Stone Strength"
+      ],
+      "cost_3": [
+        "Crevasse",
+        "Earthquake",
+        "Inhospitable Ground",
+        "Rift",
+        "Rock Hammer"
+      ],
+      "cost_4": [
+        "Earthsplitter",
+        "Obliteration",
+        "Shock Wave"
+      ]
+    },
+    "storm": {
+      "cost_1": [
+        "Fair Winds",
+        "Storm Tossed",
+        "Wind Strike"
+      ],
+      "cost_2": [
+        "Boundless Charge",
+        "Celerity",
+        "Razor Wind",
+        "Telekinesis",
+        "Wind Blast",
+        "Wings of Air"
+      ],
+      "cost_3": [
+        "Chain Lightning",
+        "Deceleration",
+        "Fog of War",
+        "Lightning Tendrils",
+        "Zephyr"
+      ],
+      "cost_4": [
+        "Raging Winds",
+        "Tempest",
+        "Tornado"
+      ]
+    }
+  },
+  "warcaster": {
+    "cost_1": [
+      "Arcane Strike",
+      "Jump Start",
+      "Return Fire"
+    ],
+    "cost_2": [
+      "Arcane Bolt",
+      "Aura of Protection",
+      "Battering Ram",
+      "Boundless Charge",
+      "Convection",
+      "Fortify",
+      "Foxhole",
+      "Redline",
+      "Refuge",
+      "Snipe",
+      "Temper Metal",
+      "Transference"
+    ],
+    "cost_3": [
+      "Awareness",
+      "Batten Down the Hatches",
+      "Eliminator",
+      "Fail Safe",
+      "Grind",
+      "Guided Fire",
+      "Iron Aggression",
+      "Rift",
+      "Superiority"
+    ],
+    "cost_4": [
+      "Force Hammer",
+      "Obliteration",
+      "Tide of Steel"
+    ]
+  }
+}

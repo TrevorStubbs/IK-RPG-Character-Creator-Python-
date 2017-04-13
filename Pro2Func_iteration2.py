@@ -4,6 +4,22 @@ Created on Mar 20, 2017
 @author: 6700K_RGB_Build
 '''
 
+#Max skill to level tester.
+def heroSkillTester(char_level, testingValue):
+    if char_level == 'hero':
+        if testingValue < 2:
+            return True
+        else: return False
+    elif char_level == 'veteran':
+        if testingValue < 3:
+            return True
+        else: return False
+    else:
+        if testingValue < 2:
+            return True
+        else: return False
+
+#Set base race stats
 def setRaceStats(char_race):
     #1 = human, 2 = dwarf, 3 = gobber, 4 = iosan, 5= nyss, 6 = ogrun, 7 = trollkin
     if char_race == 1: # if Human is selected set all the base stats.
@@ -80,6 +96,7 @@ def setRaceStats(char_race):
         print("That is not a race.") #TODO figure out how to loop back
     return char_phy, char_spd, char_str, char_agi, char_prw, char_poi, char_int, char_arc, char_per
 
+#Character Setting
 def setCharLang(char_race):
     # Choosing character's languages    
     if char_race == 1:
@@ -119,6 +136,7 @@ def setCharLang(char_race):
         lang_two = str(input("What is your character's second language? "))
         return lang_one, lang_two 
 
+#Char Height Setting
 def setCharHeight(char_race, char_sex):
     if char_race == 1:
         #human height
@@ -199,6 +217,7 @@ def setCharHeight(char_race, char_sex):
             char_height = str(input("How tall is your character? "))
     return char_height
 
+#Char Weight Setting
 def setCharWeight(char_race, char_sex):
     # Setting your character's weight
     if char_race == 1:
@@ -280,6 +299,7 @@ def setCharWeight(char_race, char_sex):
             char_height = str(input("How much does your character weigh? "))
     return char_height  
 
+#Setting Archtype 
 def setCharArch(char_race):
     # Selecting Archtype
     # 1 = Gifted, 2 = Intellectual, 3 = Mighty, 4 = Skilled
@@ -312,6 +332,7 @@ def setCharArch(char_race):
             char_arch = 4
     return char_arch
 
+#If magic user set base Arcane Stat
 def setCharArc(char_race):
     # Gifted
     if char_race == 1 or char_race == 2 or char_race == 4:
@@ -329,6 +350,7 @@ def setCharArc(char_race):
 
     
 def main():
+    char_level = "hero"
     # These next few variables fill in the top part of the character sheet
     char_name = str(input("What is your character's name? "))
     char_sex = str(input("What is your character's sex? "))
