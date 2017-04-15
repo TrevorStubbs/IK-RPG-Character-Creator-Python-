@@ -1,0 +1,65 @@
+{
+  "arcane_bolt": {
+    "cost": "2",
+    "range": "12",
+    "aoe": "-",
+    "power": "11",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Magical bolts of energy streak toward the target."
+  },
+  "arcane_strike": {
+    "cost": "1",
+    "range": "8",
+    "aoe": "-",
+    "power": "8",
+    "upkeep": false,
+    "offensive": true,
+    "description": "An arcane force blasts toward the target."
+  },
+  "arcantrik_bolt": {
+    "cost": "2",
+    "range": "10",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "A steamjack damaged by this attack becomes stationary for one round."
+  },
+  "ashen_cloud": {
+    "cost": "2",
+    "range": "ctrl",
+    "aoe": "3",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Place a 3u\"\\u0022\" AOE cloud effect anywhere completely in the spellcasteru\"\\u0027\"s control area. Characters without Immunity: Fire suffer –2 on attack rolls while within the AOE."
+  },
+  "ashes_to_ashes": {
+    "cost": "4",
+    "range": "8",
+    "aoe": "*",
+    "power": "10",
+    "upkeep": false,
+    "offensive": true,
+    "description": "If target character is hit, he and d6 of the nearest enemies within 5u\"\\u0022\" of the target suffer a POW 10 fire damage roll."
+  },
+  "aura_of_protection": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": "true",
+    "offensive": "false",
+    "description": "While in the spellcasteru\"\\u0027\"s control area, friendly characters gain +2 ARM."
+  },
+  "awareness": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcasteru\"\\u0027\"s control area, the front arcs of characters in his battlegroup are extended to 360 degrees. When determining LOS, those characters ignore cloud effects, forests, and intervening characters. Awareness lasts for one round."
+  }
+}
