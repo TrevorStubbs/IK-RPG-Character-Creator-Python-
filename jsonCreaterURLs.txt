@@ -1,0 +1,36 @@
+abilities
+http://www.objgen.com/json/models/6q2s
+
+arch
+http://www.objgen.com/json/models/HavN
+
+mil_skill
+http://www.objgen.com/json/models/IPz
+
+occ_skill
+http://www.objgen.com/json/models/D4ea
+
+career_spell_list
+http://www.objgen.com/json/models/qRw3s
+
+spell_list
+http://www.objgen.com/json/models/WCu2
+
+
+u"\u0027"
+- is '
+
+u"\u0022"
+- is "
+
+
+
+
+
+python
+javascript
+sql
+c#
+c++
+go
+java
