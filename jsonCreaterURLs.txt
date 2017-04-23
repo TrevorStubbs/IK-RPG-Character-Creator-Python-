@@ -16,11 +16,14 @@ http://www.objgen.com/json/models/qRw3s
 spell_list
 http://www.objgen.com/json/models/WCu2
 
+u"\u0022"
 
 u"\u0027"
+
+\u0027
 - is '
 
-u"\u0022"
+\u0022
 - is "
 
 

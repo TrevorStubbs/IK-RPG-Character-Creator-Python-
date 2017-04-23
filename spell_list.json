@@ -33,7 +33,7 @@
     "power": "-",
     "upkeep": true,
     "offensive": false,
-    "description": "Place a 3u\"\\u0022\" AOE cloud effect anywhere completely in the spellcasteru\"\\u0027\"s control area. Characters without Immunity: Fire suffer �2 on attack rolls while within the AOE."
+    "description": "Place a 3\u0022 AOE cloud effect anywhere completely in the spellcaster\u0027s control area. Characters without Immunity: Fire suffer –2 on attack rolls while within the AOE."
   },
   "ashes_to_ashes": {
     "cost": "4",
@@ -42,7 +42,7 @@
     "power": "10",
     "upkeep": false,
     "offensive": true,
-    "description": "If target character is hit, he and d6 of the nearest enemies within 5u\"\\u0022\" of the target suffer a POW 10 fire damage roll."
+    "description": "If target character is hit, he and d6 of the nearest enemies within 5\u0022 of the target suffer a POW 10 fire damage roll."
   },
   "aura_of_protection": {
     "cost": "2",
@@ -51,7 +51,7 @@
     "power": "-",
     "upkeep": "true",
     "offensive": "false",
-    "description": "While in the spellcasteru\"\\u0027\"s control area, friendly characters gain +2 ARM."
+    "description": "While in the spellcaster\u0027s control area, friendly characters gain +2 ARM."
   },
   "awareness": {
     "cost": "3",
@@ -60,6 +60,1385 @@
     "power": "-",
     "upkeep": false,
     "offensive": false,
-    "description": "While in the spellcasteru\"\\u0027\"s control area, the front arcs of characters in his battlegroup are extended to 360 degrees. When determining LOS, those characters ignore cloud effects, forests, and intervening characters. Awareness lasts for one round."
+    "description": "While in the spellcaster\u0027s control area, the front arcs of characters in his battlegroup are extended to 360 degrees. When determining LOS, those characters ignore cloud effects, forests, and intervening characters. Awareness lasts for one round."
+  },
+  "banishing_ward": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Enemy upkeep spells on the targeted friendly character expire. The affected character cannot be targeted by enemy spells or animi."
+  },
+  "barrier_of_flames": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Friendly characters in the spellcaster\u0027s control area gain +1 DEF. When a friendly character is hit by a melee attack while in the spellcaster\u0027s control area, the attacker suffers the Fire continuous effect. Barrier of Flames lasts for one round."
+  },
+  "battering_ram": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "When a character is hit by Battering Ram, he can be pushed 3\u0022 directly away from the spell\u0027s point of origin."
+  },
+  "batten_down_the_hatches": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\u0027s control area, characters in his battlegroup cannot be knocked down and gain +3 ARM but suffer –2 DEF. Batten Down the Hatches lasts for one round."
+  },
+  "black_out": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Mechanika devices in the possession of enemy characters in the spellcaster\u0027s control area immediately deactivate. If an enemy enters the spellcaster\u0027s control area, mechanika devices in his possession immediately deactivate. While in the spellcaster\u0027s control area, enemy characters cannot activate mechanika devices. Black Out has no effect on steamjacks or mechanika armor. Black Out lasts for one round."
+  },
+  "blade_of_radiance": {
+    "cost": "2",
+    "range": "10",
+    "aoe": "-",
+    "power": "10",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Infernal and Undead characters hit by this spell suffer an additional die of damage."
+  },
+  "blazing_effigy": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "*",
+    "power": "14",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemies within 2\u0022 of the targeted friendly character suffer a POW 14 fire damage roll."
+  },
+  "blessing_of_health": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains +3 on PHY rolls to resist poison, disease, and infection. Additionally, if the affected character is currently suffering from the effects of a poison, he immediately makes a PHY roll against the toxin rating of the poison. If the roll succeeds, the effects of the poison immediately expire."
+  },
+  "blessing_of_morrow": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "While in the spellcaster\u0027s control area, friendly living characters do not suffer the effects of lost aspects."
+  },
+  "blessings_of_war": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character\u0027s weapons gains Blessed. (When making an attack with a weapon with Blessed, ignore spell effects that add to the attacked character\u0027s ARM or DEF.)"
+  },
+  "blizzard": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Center a 3\u0022 AOE cloud effect on target character. The AOE remains centered on the character. If the target character is destroyed, remove the AOE from play. Blizzard lasts for one round."
+  },
+  "brittle_frost": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": true,
+    "description": "The next time target enemy suffers damage, halve its base ARM when calculating damage from the damage roll. After applying this damage, Brittle Frost expires."
+  },
+  "boundless_charge": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "During his turn, target character can charge without spending focus or being forced and gains +2\u0022 movement and Pathfinder when it charges. Boundless Charge lasts for one round."
+  },
+  "broadside": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster and steamjacks under the spellcaster\u0027s control currently in his control area can immediately make one normal ranged attack. Broadside can be cast only once per turn."
+  },
+  "celerity": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains one additional quick action during each of his turns."
+  },
+  "chain_lightning": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "-",
+    "power": "10",
+    "upkeep": false,
+    "offensive": true,
+    "description": "A character hit by Chain Lightning suffers a POW 10 electrical damage roll, and lightning arcs from that character to d6 consecutive additional characters. The lightning arcs to the nearest character it has not already arced to within 4\u0022 of the last model it arced to, ignoring the spellcaster. Each character the lightning arcs to suffers a POW 10 electrical damage roll."
+  },
+  "chiller": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "While within 2\u0022 of the targeted friendly character, enemy characters suffer –2 DEF unless they have Immunity: Cold."
+  },
+  "cleansing_fire": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "3",
+    "power": "14",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Cleansing Fire causes fire damage. On a critical hit, characters hit suffer the Fire continuous effect."
+  },
+  "convection": {
+    "cost": "2",
+    "range": "10",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "When Convection destroys a living character, you can allocate 1 focus point to a steamjack in the spellcaster\u0022s battlegroup that is in his control area."
+  },
+  "crevasse": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "If Crevasse incapacitates its original target, you can make a SP 6 attack using the incapacitated character as the attack’s point of origin. Characters hit suffer a POW 12 magic damage roll."
+  },
+  "crusaders_call": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Friendly characters beginning a charge while in the spellcaster’s control area gain +2\u0022 movement. Crusader\u0027s Call lasts for one round."
+  },
+  "daylight": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\u0027s control area, Infernal and Undead characters suffer –3 DEF and ARM. Additionally, the area around the spellcaster glows with enough light for anyone in his control area to see in darkness (p. 225). Daylight lasts for one round."
+  },
+  "deceleration": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\u0027s control area, friendly characters gain +2 DEF and ARM against ranged attacks. Deceleration lasts for one round."
+  },
+  "deep_freeze": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Characters within 2\u0022 of the spellcaster suffer a POW 12 cold damage roll. Characters damaged by this spell cannot run, charge, or make power attacks for one round."
+  },
+  "earthquake": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "5",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Characters in the AOE are knocked down."
+  },
+  "earths_cradle": {
+    "cost": "1",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The spellcaster gains cover, does not suffer blast damage, and does not block LOS. Earth\u0027s Cradle expires if this character moves, is placed, or is engaged."
+  },
+  "earthsplitter": {
+    "cost": "4",
+    "range": "10",
+    "aoe": "3",
+    "power": "14",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Characters hit suffer a POW 14 fire damage roll. The AOE is a cloud effect that remains in play for one round. Characters entering or ending their turn in the AOE suffer an unboostable POW 14 fire damage roll."
+  },
+  "electrical_blast": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "3",
+    "power": "13",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Electrical Blast causes electrical damage. Steamjacks damaged by Electrical Blast suffer Disruption. (A steamjack suffering Disruption loses its focus points and cannot be allocated focus or channel spells for one round)."
+  },
+  "electrify": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "If target character is hit by a melee attack, after the attack is resolved the attacker is pushed d3\u0022 directly away from the affected character and suffers an unboostable POW 14 electrical damage roll, then Electrify expires."
+  },
+  "eliminator": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "3",
+    "power": "13",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Immediately after this attack is resolved, the spellcaster can advance up to 2\u0022 for each enemy incapacitated by the attack."
+  },
+  "entangle": {
+    "cost": "1",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character suffers –1 SPD and cannot run or charge for one round."
+  },
+  "eyes_of_truth": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "This character\u0027s PER rolls are boosted. Additionally, the  target number for Deception rolls against this character is increased by 3."
+  },
+  "extinguisher": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Fire continuous effects in the spellcaster\u0027s control area immediately expire."
+  },
+  "fail_safe": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target steamjack gains +2 ARM and does not suffer the effects of crippled systems."
+  },
+  "fair_winds": {
+    "cost": "1",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster gains +1 SPD this turn."
+  },
+  "fire_group": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\u0027s control area, his weapons and the ranged weapons of steamjacks under his control gain +2 RNG. Fire Group lasts for one round."
+  },
+  "fire_starter": {
+    "cost": "1",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster starts a small fire within the range of the spell and in line of sight. This spell can be used to target an enemy, in which case it requires an attack roll. If the enemy is hit, he suffers the Fire continuous effect."
+  },
+  "flames_of_wrath": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "When target character incapacitates an enemy with a melee attack, enemy characters within 1\u0022 of the incapacitated character suffer the Fire continuous effect. Flames of Wrath lasts for one round."
+  },
+  "flare": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemies in the spellcaster\u0027s control area suffering the Fire continuous effect immediately suffer an additional unboostable POW 12 fire damage roll. This spell can be cast only once per turn."
+  },
+  "fog_of_war": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Characters gain concealment while in the spellcaster\u0027s  control area."
+  },
+  "force_field": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The spellcaster does not suffer blast or collateral damage and cannot be knocked down. When an enemy AOE ranged attack deviates from a point in the spellcaster’s control area, after the deviation distance is rolled the spellcaster\u0027s player chooses the deviation direction."
+  },
+  "force_hammer": {
+    "cost": "4",
+    "range": "10",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "If Force Hammer hits a non-incorporeal target, instead of suffering a normal damage roll, that target is slammed d6\u0022 directly away from the spell\u0027s point of origin regardless of its base size and suffers a POW 12 damage roll. Collateral damage from this slam is POW 12."
+  },
+  "force_of_faith": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemies currently in the spellcaster\u0027s control area are immediately pushed d6\u0022 directly away from the spellcaster in the order he chooses."
+  },
+  "fortify": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target steamjack under the spellcaster\u0027s control gains +2 ARM. The affected steamjack and any friendly character B2B with it cannot be knocked down, pushed, or slammed."
+  },
+  "foxhole": {
+    "cost": "2",
+    "range": "ctrl",
+    "aoe": "5",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Place a 5\u0022 AOE anywhere completely in the spellcaster\u0027s control area. Characters completely in the AOE have cover and do not suffer blast damage. When drawing LOS to a character not completely within the AOE, ignore intervening characters completely within the AOE."
+  },
+  "freezing_grip": {
+    "cost": "4",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Target character hit becomes stationary for one round unless the target has Immunity: Cold."
+  },
+  "freezing_mist": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "*",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\u0027s control area, enemy characters without Immunity: Cold suffer –2 SPD and DEF. Freezing Mist lasts for one round."
+  },
+  "frozen_ground": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemies that move more than 2\u0022 and end their movement in the spellcaster\u0027s control area are knocked down at the end of their movement. Frozen Ground lasts for one round."
+  },
+  "frostbite": {
+    "cost": "2",
+    "range": "sp8",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Frostbite causes cold damage."
+  },
+  "fuel_the_flames": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Fire continuous effects on enemies in the spellcaster\u0027s control area never expire."
+  },
+  "full_throttle": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Steamjacks under the spellcaster\u0027s control beginning their turns in his control area can run, charge, or make slam or trample power attacks without spending focus or being driven that activation. The spellcaster and steamjacks under the spellcaster’s control in his control area gain boosted melee attack rolls. Full Throttle lasts for one turn."
+  },
+  "grind": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "-",
+    "power": "14",
+    "upkeep": false,
+    "offensive": true,
+    "description": "When a steamjack is hit by Grind, it suffers 1 damage point to its first available Movement system box."
+  },
+  "guided_blade": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target friendly character gains +1 on his melee attack rolls and his melee weapons gain Magical Weapon. Guided Blade lasts for one round."
+  },
+  "guided_fire": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster and steamjacks under the spellcaster\u0027s control in his control area gain boosted ranged attack rolls. Guided Fire lasts until for one round."
+  },
+  "hand_of_fate": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains an additional die on attack and damage rolls. Discard the low die in each roll."
+  },
+  "heal": {
+    "cost": "4",
+    "range": "*",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target friendly incapacitated character B2B with the spellcaster is no longer incapacitated and regains 1 vitality point in each aspect. The character no longer suffers from the results of his most recent roll on the Injury Table (p. 217). The target character becomes knocked down. Each time a character is targeted by this spell make a d6 roll on the Price of Healing Table (pg. 240), adding +1 to the roll for each time the character has been targeted by this spell after the first time."
+  },
+  "heightened_reflexes": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character cannot be knocked down or made stationary."
+  },
+  "hex_blast": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "3",
+    "power": "13",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Upkeep spells and animi on the character directly hit by Hex Blast immediately expire."
+  },
+  "hoarfrost": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "3",
+    "power": "14",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Hoarfrost causes cold damage. On a critical hit, the characters hit become stationary for one round unless they have Immunity: Cold."
+  },
+  "howling_flames": {
+    "cost": "2",
+    "range": "sp8",
+    "aoe": "-",
+    "power": "10",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Howling Flames causes fire damage. On a critical hit, the character hit suffers the Fire continuous effect."
+  },
+  "hymn_of_battle": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target steamjack gains +2 on attack and damage rolls. Hymn of Battle lasts for one round."
+  },
+  "hymn_of_passage": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target steamjack cannot be targeted by non-magical ranged attacks. Hymn of Passage lasts for one round."
+  },
+  "hymn_of_shielding": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in this character\\u0027s control area, friendly characters cannot be targeted by enemy spells. Hymn of Shielding lasts for one round."
+  },
+  "ice_bolt": {
+    "cost": "2",
+    "range": "10",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Ice Bolt causes cold damage. On a critical hit, the character hit become stationary for one round unless he has Immunity: Cold."
+  },
+  "ice_shield": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains +2 ARM. Ice Shield immediately expires if the affected character moves or is damaged."
+  },
+  "icy_grip": {
+    "cost": "2",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": true,
+    "description": "Target character without Immunity: Cold suffers –2 DEF and cannot run or make power attacks."
+  },
+  "ignite": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains +2 on melee attack damage rolls. The affected character gains Critical Fire on his normal melee attacks."
+  },
+  "immolation": {
+    "cost": "2",
+    "range": "8",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Immolation causes fire damage. On a critical hit, the character hit suffers the Fire continuous effect."
+  },
+  "inferno": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "3",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "All characters hit suffer a POW 12 fire damage roll. The AOE remains in play for one round. Characters entering or ending their turns in the AOE suffer an unboostable POW 12 fire damage roll."
+  },
+  "influence": {
+    "cost": "1",
+    "range": "10",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "The spellcaster makes a contested Willpower roll against target living enemy hit by this spell. If the spellcaster loses, nothing happens. If the spellcaster wins, his player takes control of the character hit. The character immediately makes one normal melee attack, then Influence expires."
+  },
+  "inhospitable_ground": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\\u0027s control area, other characters treat open terrain as rough terrain. Inhospitable Ground lasts for one round."
+  },
+  "iron_aggression": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target steamjack can run, charge, or make slam or trample power attacks without spending focus or being driven and gains boosted melee attack rolls."
+  },
+  "jackhammer": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The targeted friendly steamjack can immediately make one melee attack."
+  },
+  "jump_start": {
+    "cost": "1",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster and steamjacks under the spellcaster\\u0027s control in his control area can immediately turn to face any direction. Affected steamjacks that are stationary or knocked down are no longer stationary and stand up."
+  },
+  "lamentation": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "While in this character\\u0027s control area, enemies pay double the fatigue, focus, or fury point cost to cast or upkeep spells."
+  },
+  "light_in_the_darkness": {
+    "cost": "1",
+    "range": "self",
+    "aoe": "true",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The area around the spellcaster glows with enough light for anyone in his control area to see in darkness (p. 225)."
+  },
+  "lightning_tendrils": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The targeted friendly character gains Immunity: Electricity, and the character\\u0027s melee weapons gain Reach and Electro Leap. (When a character is hit by a weapon with Electro Leap, you can have lightning arc to the nearest character within 4\\u0022 of the character hit, ignoring the attacker. The character the lightning arcs to suffers an unboostable POW 10 electrical damage roll.)"
+  },
+  "locomotion": {
+    "cost": "1+",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster spends up to 3 focus points to cast Locomotion. Target steamjack immediately advances up to 1\\u0022 for each focus point spent. A steamjack can be targeted by Locomotion only once per round."
+  },
+  "mirage": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "During the spellcaster\\u0027s Control Phase after upkeep has been paid, the targeted friendly character\\u0027s controller can place him anywhere completely within 2\\u0022 of his current location."
+  },
+  "obliteration": {
+    "cost": "4",
+    "range": "10",
+    "aoe": "4",
+    "power": "15",
+    "upkeep": false,
+    "offensive": true,
+    "description": "The force of this attack blasts apart the earth itself."
+  },
+  "occultation": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target character gains stealth and +3 on his Sneak rolls."
+  },
+  "overmind": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster immediately makes a contested Willpower roll against all living enemies in his control area. Roll once for the spellcaster. If the spellcaster beats an enemy\\u0027s Willpower roll, he can cause that character to advance up to 3\\u0022 and perform one non-spell, non-feat quick action. If the enemy beats or ties the spellcaster’s roll, he is not affected. This spell can be cast only once per round."
+  },
+  "polarity_shield": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character cannot be targeted by a charge made by a character in his front arc."
+  },
+  "positive_charge": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target steamjack gains +2 on melee attack and melee damage rolls. While within 3\\u0022 of the affected steamjack, friendly characters gain +2 on melee attack and melee damage rolls. Positive Charge lasts for one round."
+  },
+  "power_booster": {
+    "cost": "1",
+    "range": "5",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "If the target steamjack the spellcaster controls has no focus points, it gains 1 focus point. If the steamjack is Disrupted, it is no longer Disrupted."
+  },
+  "prayer_of_guidance": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target character gains two additional dice on his next skill roll. Discard the lowest two dice in the roll. Prayer of Guidance can be cast only once per day."
+  },
+  "protection_from_cold": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains Immunity: Cold."
+  },
+  "protection_from_corrosion": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains Immunity: Corrosion."
+  },
+  "protection_from_electricity": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains Immunity: Electricity and cannot be disrupted."
+  },
+  "protection_from_fire": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains Immunity: Fire."
+  },
+  "purification": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Continuous effects, animi, and upkeep spells in the spellcaster\\u0027s control area immediately expire."
+  },
+  "raging_winds": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "While in the spellcaster\\u0027s control area, enemies suffer –2 DEF. Enemies beginning their turn in the spellcaster\\u0027s control area cannot run or charge. Raging Winds lasts for one round."
+  },
+  "razor_wind": {
+    "cost": "2",
+    "range": "10",
+    "aoe": "-",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "A blade of wind slices through the target."
+  },
+  "redline": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The targeted friendly steamjack gains +2 STR and SPD and can run, charge, or make power attack slams or tramples without spending focus or being driven. When the steamjack ends its turn, it suffers d3 damage points."
+  },
+  "refuge": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "When target character directly hits another character with an attack during his turn, immediately after his turn ends the character affected by this spell can make a full  advance. The character cannot be targeted by free strikes during this movement."
+  },
+  "return_fire": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "When target character is targeted by an enemy ranged attack, after the attack is resolved the affected character can make one normal melee or ranged attack, then Return Fire expires. Return Fire lasts for one round."
+  },
+  "rift": {
+    "cost": "3",
+    "range": "8",
+    "aoe": "4",
+    "power": "13",
+    "upkeep": false,
+    "offensive": true,
+    "description": "The AOE is rough terrain and remains in play for one round."
+  },
+  "righteous_flame": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target character gains Immunity: Fire. When a character without Immunity: Fire ends his turn within 2\\u0022 of the affected character, the character without Immunity: Fire suffers the Fire continuous effect. Righteous Flames lasts for one round."
+  },
+  "rime": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target character gains Immunity: Cold. When a character without Immunity: Cold ends his turn within 2\\u0022 of the affected character, the character without Immunity: Cold becomes stationary until the end of his next turn. Rime lasts for one round."
+  },
+  "rock_hammer": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "3",
+    "power": "14",
+    "upkeep": false,
+    "offensive": true,
+    "description": "On a critical hit, characters hit are knocked down."
+  },
+  "rock_wall": {
+    "cost": "2",
+    "range": "ctrl",
+    "aoe": "wall",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Place a wall template (p. 352) anywhere completely in the spellcaster\\u0027s control area where it does not touch a character\\u0027s base, an obstruction, or an obstacle. The wall is a linear obstacle that provides cover."
+  },
+  "rune_shot": {
+    "accuracy": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "The spellcaster\\u0027s next rune shot ranged attack roll this turn is boosted."
+    },
+    "black_penny": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "The spellcaster\\u0027s next rune shot ranged attack roll this turn ignores the firing into melee penalty."
+    },
+    "brutal": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "The spellcaster\\u0027s next rune shot ranged attack gains a boosted ranged attack damage roll against the target directly hit."
+    },
+    "detonator": {
+      "cost": "3",
+      "range": "self",
+      "aoe": "*",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster directly hits a target with its next rune shot ranged attack this turn, center a 4\\u0022 AOE on the target. Characters other than the original target within the AOE suffer an unboostable damage roll with a POW equal to the POW of the ranged weapon."
+    },
+    "earth_shaker": {
+      "cost": "3",
+      "range": "self",
+      "aoe": "*",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If this character directly hits a target with its next rune shot ranged attack this turn, the attack becomes AOE 5 and POW 0. Characters hit by the AOE suffer no damage but are knocked down."
+    },
+    "fire_beacon": {
+      "cost": "2",
+      "range": "self",
+      "aoe": "*",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "The spellcaster\\u0027s next rune shot ranged attack this turn becomes AOE 5 and POW —. While a character is within the AOE, he loses Camouflage and stealth, and other characters can ignore cloud effects when determining LOS to him. The AOE lasts for one round."
+    },
+    "freeze_fire": {
+      "cost": "4",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster\\u0027s next rune shot ranged attack this turn hits, the target directly hit becomes stationary for one round."
+    },
+    "heart_stopper": {
+      "cost": "4",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "Damage exceeding the ARM of the character hit by spellcaster\\u0027s next rune shot ranged attack this turn is doubled. A character disabled by this attack cannot make a Tough roll."
+    },
+    "iron_rot": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster\\u0027s next rune shot ranged attack this turn directly hits a steamjack, in addition to any other damage and effects from the attack, the steamjack also suffers d3 damage points."
+    },
+    "molten_shot": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster\\u0027s next rune shot ranged attack this turn hits, the target directly hit suffers the Fire continuous effect."
+    },
+    "momentum": {
+      "cost": "4",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster hits with his next rune shot ranged attack this turn, the character directly hit is slammed d6\\u0022 directly away from the spellcaster regardless of his base size and suffers a damage roll with a POW equal to the ranged weapon. Collateral damage from this slam is equal to the POW of the ranged weapon."
+    },
+    "phantom_seeker": {
+      "cost": "3",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "The spellcaster\\u0027s next rune shot ranged attack this turn ignores LOS when making ranged attacks. The attack also ignores concealment and cover."
+    },
+    "shadow_fire": {
+      "cost": "2",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster hits a target with his next rune shot ranged attack this turn, friendly characters can ignore the target when determining LOS and making ranged or magic attacks for one round."
+    },
+    "silencer": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "The spellcaster\\u0027s next rune shot ranged attack is completely silent, and gives no sign of being fired. Neither the firing of the weapon, nor the impact of its ammunition causes a sound. Any immediate sound from a target that is hit, such as a scream, shout, or the fall of a body, is silenced."
+    },
+    "spell_cracker": {
+      "cost": "3",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster directly hits a target with his next rune shot ranged attack this turn, upkeep spells and animi on the target hit immediately expire."
+    },
+    "spontaneous_combustion": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "*",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster destroys a living character with his next rune shot ranged attack, center a 3\\u0022 AOE cloud effect on the destroyed character, then remove the destroyed character from the table. The AOE remains in play for one round."
+    },
+    "thunderbolt": {
+      "cost": "1",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster directly hits a target with his next rune shot ranged attack this turn, the target is pushed d3\\u0022 directly away from this character. On a critical hit, the target is knocked down after being pushed."
+    },
+    "trick_shot": {
+      "cost": "2",
+      "range": "self",
+      "aoe": "-",
+      "power": "-",
+      "upkeep": false,
+      "offensive": false,
+      "description": "If the spellcaster directly hits a target with its rune shot next ranged attack this turn, choose a character within 4\\u0022 of the target that was hit. After the attack is resolved, the spellcaster immediately makes a ranged attack roll against the chosen character. If the chosen character is hit, it suffers a magical damage roll with a POW equal to that of his ranged weapon but does not suffer any effects of other Rune Shot spells cast on the original attack. The point of origin for this damage is the character originally hit."
+    }
+  },
+  "sanguine_blessing": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "-",
+    "power": "ctrl",
+    "upkeep": true,
+    "offensive": false,
+    "description": "When a friendly character in the spellcaster\\u0027s control area would suffer a damage roll, the spellcaster can suffer the damage roll instead. Decide whether the spellcaster suffers the damage before the roll is made."
+  },
+  "sea_of_fire": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "*",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemy characters without Immunity: Fire within 5\\u0022 of the spellcaster suffer the Fire continuous effect."
+  },
+  "shatter_storm": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "When target character directly hits and destroys an enemy with a ranged or melee attack, center a 3\\u0022 AOE on the destroyed character, then remove that character from the table. Characters in the AOE are hit and suffer an unboostable POW 8 blast damage roll."
+  },
+  "shield_of_faith": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains +2 ARM against magic attacks and attacks made by Infernal or Undead characters."
+  },
+  "shock_wave": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "*",
+    "power": "13",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Characters with 5\\u0022 of the spellcaster suffer a POW 13 damage roll. Each enemy damaged by Shock Wave is pushed d6\\u0022 directly away the spellcaster in the order you choose."
+  },
+  "short_out": {
+    "cost": "1",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Mechanika devices in the possession of target character hit immediately deactivate. Short Out has no effect on steamjacks or mechanika armor."
+  },
+  "snipe": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character\\u0027s ranged weapons gain +4 RNG."
+  },
+  "solid_ground": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "While in the spellcaster\\u0027s control area, friendly characters cannot be knocked down and do not suffer blast damage."
+  },
+  "solovins_boon": {
+    "cost": "1",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster can reroll failed Medicine skill rolls. Each failed roll can be rerolled only once as a result of Solovin\\u0027s Boon."
+  },
+  "star_fire": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemies that move and end their movement closer to the spellcaster than they began suffer an unboostable POW 12 damage roll. Star Fire lasts for one round."
+  },
+  "staying_winters_hand": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "While in the spellcaster\\u0027s control area, friendly characters gain +2 ARM against cold damage. Additionally, while affected by this spell, characters never suffer the effects of exposure to cold weather and are kept warm."
+  },
+  "stone_stance": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character cannot be knocked down, pushed, or slammed for one round."
+  },
+  "stone_strength": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Target character gains +1 STR and ARM."
+  },
+  "storm_tossed": {
+    "cost": "1",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "When an enemy character is hit by Storm Tossed, he is pushed 3˝ directly away from the spell’s point of origin."
+  },
+  "sunburst": {
+    "cost": "3",
+    "range": "10",
+    "aoe": "3",
+    "power": "13",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Blast damage from this spell only affects enemies."
+  },
+  "superiority": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The targeted friendly steamjack gains +2 SPD, MAT, and DEF and cannot be knocked down."
+  },
+  "telekinesis": {
+    "cost": "2",
+    "range": "8",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Place target character completely within 2\\u0022 of its current location. When Telekinesis targets an enemy character, it is an offensive spell and requires a magic attack roll. A character can be affected by Telekinesis only once per round."
+  },
+  "temper_metal": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The targeted friendly steamjack gains +2 ARM and is immune to continuous effects."
+  },
+  "tempest": {
+    "cost": "4",
+    "range": "8",
+    "aoe": "4",
+    "power": "12",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Characters hit by Tempest are knocked down and suffer a POW 12 damage roll."
+  },
+  "tide_of_steel": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster and steamjacks under his control currently in his control area can immediately advance up to 3\\u0022."
+  },
+  "tornado": {
+    "cost": "4",
+    "range": "10",
+    "aoe": "-",
+    "power": "13",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Instead of suffering a normal damage roll, a non-incorporeal character hit by Tornado is thrown d6\\u0022 directly away from the spell\\u0027s point of origin regardless of its base size and suffers a POW 13 damage roll. Collateral damage from this throw is POW 13."
+  },
+  "transference": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The spellcaster can allow other friendly living characters in his control area to spend focus points on him to boost melee attack or melee damage rolls during their turns at a rate of 1 focus point per boost."
+  },
+  "triage": {
+    "cost": "2",
+    "range": "B2B",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "The spellcaster must be B2B with an incapacitated character who needs to be stabilized to cast this spell. When this spell is cast the incapacitated character is immediately stabilized."
+  },
+  "true_path": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Friendly characters beginning their turns in the spellcaster\\u0027s control area gain +2\\u0022 movement and Pathfinder during their turns. True Path lasts for one round."
+  },
+  "true_sight": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "This character ignores concealment, Camouflage, and stealth. The character can also see in complete darkness."
+  },
+  "vision": {
+    "cost": "2",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "The next time target character is directly hit by an attack, he suffers no damage roll from the attack, then Vision expires."
+  },
+  "voltaic_lock": {
+    "cost": "4",
+    "range": "10",
+    "aoe": "*",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "Target steamjack hit cannot advance and suffers –4 DEF. A steamjack beginning an advance within 3\\u0022 of the steamjack hit cannot run or charge and can only advance directly toward it. Voltaic Lock lasts for one round."
+  },
+  "wall_of_fire": {
+    "cost": "2",
+    "range": "ctrl",
+    "aoe": "wall",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "Place the wall template anywhere completely in the spellcaster\\u0027s control area where it does not touch a character\\u0027s base, an obstruction, or an obstacle. When a character enters or ends his turn in the wall area, he suffers an unboostable POW 12 fire damage roll and the Fire continuous effect. Characters within the wall template gain concealment."
+  },
+  "white_out": {
+    "cost": "4",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": true,
+    "offensive": false,
+    "description": "While in the spellcaster\\u0027s control area, enemies have their LOS reduced to 5\\u0022."
+  },
+  "wind_blast": {
+    "cost": "2",
+    "range": "ctrl",
+    "aoe": "5",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Place a 5\\u0022 AOE anywhere completely in the spellcaster\\u0027s control area. Cloud effects overlapping the AOE expire. Characters suffer –3 RAT while within the AOE. The AOE remains in play for one round."
+  },
+  "wind_strike": {
+    "cost": "1",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": true,
+    "description": "This spell does not inflict damage. An enemy hit by this spell can be pushed 1\\u0022 directly away from the spellcaster. After the enemy is pushed, the spellcaster can advance up to 1\\u0022 toward the pushed enemy."
+  },
+  "wings_of_air": {
+    "cost": "2",
+    "range": "self",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Place the spellcaster anywhere completely within 5\\u0022 of his current location. Wings of Air can be cast only once per turn."
+  },
+  "winter_storm": {
+    "cost": "3",
+    "range": "self",
+    "aoe": "ctrl",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Enemies that begin their turns in the spellcaster\\u0027s control range lose Eyeless Sight, Flight, and Pathfinder during their turns. Winter Storm lasts for one round."
+  },
+  "zephyr": {
+    "cost": "3",
+    "range": "6",
+    "aoe": "-",
+    "power": "-",
+    "upkeep": false,
+    "offensive": false,
+    "description": "Target character can immediately advance up to 5\\u0022. A character can be affected by Zephyr only once per round."
   }
 }
